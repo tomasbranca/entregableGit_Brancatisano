@@ -1,0 +1,857 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.pag{
+    margin-left: 125px;
+    margin-right: 125px;
+    background-color: #F2F2F2;
+    border: solid 5px #CCD5D9;
+    overflow: hidden;    
+}
+
+header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+}
+
+nav{
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul {
+    display: flex;
+    justify-content: stretch;
+    padding: 0 50px;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    justify-self: stretch;
+    width: 100%;
+}
+
+nav ul li a{
+    background-color: #071D26;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #f2f2f2;
+    list-style: none;
+    font-family: Impact;
+    font-style: italic;
+    font-size: 25px;
+    border: solid 5px #f2f2f2;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    background-color: #052A43;
+}
+
+footer a{
+    text-decoration: none;
+    color: #F2F2F2;
+    margin-left: 125px;
+    font-family: Impact;
+    font-style: italic;
+    font-size: 25px;
+    font-size:x-small
+}
+
+
+
+
+
+
+
+.pagIndex{
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2fr;
+    grid-template-rows: 3fr 5fr 2.5fr;
+    grid-template-areas:
+    "titulos titulos titulos titulos"
+    "info info info puestos"
+    "info2 info2 info2 info2";
+    height: 150vh;
+}
+
+.titulos{
+    color: #F2F2F2;
+    text-align: center;
+    font-family:Impact;
+    font-style: italic;
+    line-height: 0px;
+    grid-area: titulos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #071D26;
+}
+
+.titulos__title {
+    font-size: 100px;
+    font-weight: lighter;
+}
+
+.titulos__subtitle{
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.puestos{
+    text-align: center; 
+    grid-area: puestos;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.puestos a iframe{
+    border: solid 5px #CCD5D9;
+    width: 200px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+.west{
+    height: 250px;
+    overflow: hidden;
+}
+.puestos__txt{
+    font-family: FranklinGothic2;
+    font-weight:bolder;
+    color: #071D26;
+}
+
+.info{
+    font-family:FranklinGothic;
+    color: #071D26;
+    grid-area: info;
+    justify-content: center;
+}
+.info:hover{
+    color: #052A43;  
+    
+}
+
+.un{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight:bold
+}
+.base{
+    display: flex;
+    cursor: pointer;
+}
+
+.txt{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pic{
+    margin-left: 20px;   
+}
+.pic img{
+    border: solid 5px #CCD5D9;
+    width: 400px;
+    height: 400px;
+}
+.title{
+    font-size: 40px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: #071D26;
+}
+.title:hover{
+    color: #052A43;  
+}
+
+.resume{
+    font-family: FranklinGothic2;
+    font-weight: bolder;
+    margin-right: 20px;
+    color: #071D26;
+}
+
+.info2{
+    grid-area: info2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "new1 new2 new3 new4";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around
+
+}
+.new1{
+    grid-area: new1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 267px ;
+    transition: padding 0.5s;
+    cursor: pointer;
+}
+.new1:hover{
+    padding: 10px;
+}
+.new2:hover{
+    padding: 10px;
+}
+.new3:hover{
+    padding: 10px;
+}
+.new4:hover{
+    padding: 10px;
+}
+
+
+.new__pic{
+    display: flex;
+    justify-content: center;
+}
+
+.new__pic img{
+    border: solid 5px #CCD5D9;
+    width: 267px ;
+    height: 150px;
+}
+
+.new__txt{
+    display: flex;
+    text-align: center;
+    color: #071D26;
+    font-family: FranklinGothic;
+    font-size: 20px;
+
+}
+.new__txt:hover{
+    color: #052A43;
+}
+
+.new2{
+    grid-area: new2;
+    display: flex;
+    flex-direction: column;
+    width: 267px ;
+    transition: padding 0.5s;
+    cursor: pointer;
+
+}
+
+.new3{
+    grid-area: new3;
+    display: flex;
+    flex-direction: column;
+    width: 267px ;
+    transition: padding 0.5s;
+    cursor: pointer;
+
+
+}
+.new4{
+    grid-area: new4;
+    display: flex;
+    flex-direction: column;
+    width: 267px ;
+    transition: padding 0.5s;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+.pagNoticias{
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 1.5fr;
+    grid-template-rows: 2fr 7fr 3fr;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "notPrin notPrin notSec"
+    "notTer notTer notTer";
+    height: 150vh;
+}
+
+.titulo{
+    grid-area: titulo;
+    color: #f2f2f2;
+    text-align:start;
+    font-family:Impact;
+    font-style: italic;
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #071D26;
+}
+.titulo h2{
+    font-size: 80px;
+    margin-left: 15px;
+    font-weight: lighter;
+}
+
+.notPrin{
+    grid-area: notPrin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.notPrin a{
+    display: flex;
+    justify-content: center;
+
+}
+.notPrin a img{
+    border: solid 5px #CCD5D9;
+    display: inline;
+}
+.notPrin h1{
+    font-family:FranklinGothic;
+    color: #071D26;
+    font-size: 40px;
+    text-decoration: none;
+}
+.notPrin h1:hover{
+    color: #052A43;
+
+}
+
+
+.notSec{
+    grid-area: notSec;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "new1"
+    "new2";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.notSec .new1{
+    grid-area: new1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+    cursor: pointer;
+}
+.notSec .new1 a{
+    display: flex;
+    justify-content: center;
+}
+.notSec .new1 a img{
+    border: solid 5px #CCD5D9;
+    display: inline; 
+}
+.notSec h2{
+    font-family:FranklinGothic;
+    color: #071D26;
+    font-size: 20px;
+    text-decoration: none;
+}
+.notSec .new2{
+    grid-area: new2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+.notSec .new2 a{
+    display: flex;
+    justify-content: center;
+}
+.notSec .new2 a img{
+    border: solid 5px #CCD5D9;
+    display: inline;
+}
+.notTer{
+    grid-area: notTer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "new1 new2 new3 new4";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.notTer .new1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 231px;
+    cursor: pointer;
+}
+.notTer .new1 a{
+    display: flex;
+    justify-content: center;
+}
+.notTer .new1 a img{
+    border: solid 5px #CCD5D9;
+    display: inline;
+    width: 231px;
+}
+.notTer .new1 h2{
+    font-family:FranklinGothic;
+    color: #071D26;
+    font-size: 20px;
+    text-decoration: none;
+}
+.notTer .new2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 231px;
+    cursor: pointer;
+}
+.notTer .new2 a{
+    display: flex;
+    justify-content: center;
+}
+.notTer .new2 a img{
+    border: solid 5px #CCD5D9;
+    display: inline;
+    width: 231px;
+}
+.notTer .new2 h2{
+    font-family:FranklinGothic;
+    color: #071D26;
+    font-size: 20px;
+    text-decoration: none;
+}
+.notTer .new3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 231px;
+    cursor: pointer;
+}
+.notTer .new3 a{
+    display: flex;
+    justify-content: center;
+}
+.notTer .new3 a img{
+    border: solid 5px #CCD5D9;
+    display: inline;
+    width: 231px;
+}
+.notTer .new3 h2{
+    font-family:FranklinGothic;
+    color: #071D26;
+    font-size: 20px;
+    text-decoration: none;
+}
+.notTer .new4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 231px;
+    cursor: pointer;
+}
+.notTer .new4 a{
+    display: flex;
+    justify-content: center;
+}
+.notTer .new4 a img{
+    border: solid 5px #CCD5D9;
+    display: inline;
+    width: 231px;
+}
+.notTer .new4 h2{
+    font-family:FranklinGothic;
+    color: #071D26;
+    font-size: 20px;
+    text-decoration: none;
+}
+.new1 h2:hover{
+    color: #052A43;
+}
+.new2 h2:hover{
+    color: #052A43;
+}
+.new3 h2:hover{
+    color: #052A43;
+}
+.new4 h2:hover{
+    color: #052A43;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: Impact;
+    src: url("../fonts/impact.ttf");
+}
+@font-face {
+    font-family: FranklinGothic;
+    src: url("../fonts/Franklin\ Gothic\ Condensed.ttf");
+}
+@font-face {
+    font-family: FranklinGothic2;
+    src: url(../fonts/Franklin\ Gothic\ Book\ Regular.ttf);
+}
+
+@media screen and (max-width: 480px){
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .pag{
+        margin-left: 25px;
+        margin-right: 25px;
+        border: solid 2px #CCD5D9;   
+    }
+
+    nav ul {
+    display: flex;
+    justify-content: stretch;
+    padding: 0;
+    list-style-type: none;
+    }
+    
+    nav ul li a{
+        font-size: 10px;
+        border: solid 2px #f2f2f2;
+        padding: 8px 12px;
+    }
+    footer a{
+        margin-left: 25px;
+        font-size: 10px;
+        font-size:x-small
+    }
+    .pagIndex{
+        display: grid;
+        grid-template-rows: 1fr 2fr 2fr 2fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulosm"
+        "infom"
+        "info2m"
+        "puestosm";
+        height: 160vh;
+    }
+    .titulos__title {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .titulos__subtitle{
+        display: flex;
+        font-size: 10px;
+        justify-content: center;
+        font-weight: lighter;
+    }
+
+    .titulos{
+        color: #F2F2F2;
+        text-align: center;
+        font-family:Impact;
+        font-style: italic;
+        grid-area: titulosm;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #071D26;
+    }
+    .info{
+        grid-area: infom;
+    }
+    .info__un{
+        font-weight:bold;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    .info__base__pic{
+        margin-left: 5px ; 
+    }
+    .info__base__pic img{
+        border: solid 2px #CCD5D9;
+        width: 125px;
+        height: 125px;
+    }
+    .info__base__txt{
+        margin-left: 5px;
+    }
+
+    .info__base__title{
+        font-size: 15px;
+        text-decoration: none;
+        color: #071D26;
+    }
+    .info__base__resume{
+        height:35px;
+        overflow: hidden;
+    }
+    .info2{
+        grid-area: info2m;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "new1m new2m"
+        "new3m new4m";
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .new__pic img{
+        border: solid 2px #CCD5D9;
+        width: 113px ;
+        height: 72px;
+        justify-content: start;
+    }
+    .new__txt{
+        display: flex;
+        text-align: center;
+        color: #071D26;
+        font-family: FranklinGothic;
+        font-size: 10px;
+
+    }
+
+    .new1{
+        grid-area: new1m;
+        display: flex;
+        flex-direction: column;
+        width: 113px;
+    }
+    .new2{
+        grid-area: new2m;
+        display: flex;
+        flex-direction: column;
+        width: 113px;
+    }
+    .new3{
+        grid-area: new3m;
+        display: flex;
+        flex-direction: column;
+        width: 113px;
+    }
+    .new4{
+        grid-area: new4m;
+        display: flex;
+        flex-direction: column;
+        width: 113px;
+    }
+    .puestos{
+        grid-area: puestosm;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .puestos a iframe{
+        border: solid 5px #CCD5D9;
+        width: 100px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        
+    }
+    .west{
+        height: 150px;
+        overflow: hidden;
+    }
+    .puestos__txt{
+        font-family: FranklinGothic2;
+        font-weight:bolder;
+        color: #071D26;
+        font-size: 10px
+    }
+
+
+
+
+
+
+
+    .pagNoticias{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 3fr 1fr 4fr;
+        grid-template-areas:
+        "titulom"
+        "notPrinm"
+        "notSecm"
+        "notTerm";
+        height: 150vh;
+    }
+    .titulo{
+        grid-area: titulom;
+    }
+    .titulo h2{
+        display: flex;
+        justify-content: start;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .notPrin{
+        grid-area: notPrinm;
+        justify-content: center;
+
+    }
+    .notPrin a img{
+        width: 224px;
+        height: 160px;
+        border: solid 2px #CCD5D9;
+        display: inline;
+    }
+    .notPrin h1{
+        font-size: 15px;
+
+    }
+    .notSec{
+        grid-area: notSecm;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "new1m new2m";
+        height: 150px;
+        margin-left: 8px;
+
+    }
+
+    .notSec .new1{
+        grid-area: new1m;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .notSec .new1 a img{
+        border: solid 2px #CCD5D9; 
+        width: 120px;
+        height: 80px;
+    }
+    .notSec h2{
+        font-size: 10px;
+    }
+
+    .notSec .new2{
+        grid-area: new2m;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 6px;
+    }
+    .notSec .new2 a img{
+        border: solid 2px #CCD5D9; 
+        width: 120px;
+        height: 80px;
+    }
+    .notSec h2{
+        font-size: 10px;
+    }
+    .notTer{
+        grid-area: notTerm;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+        "new1tm new2tm"
+        "new3tm new4tm";
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+    }
+    .notTer .new1{
+        grid-area: new1tm;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .notTer .new1 a img{
+        border: solid 2px #CCD5D9; 
+        width: 120px;
+        height: 80px;
+    }
+    .notTer .new1 h2{
+        font-size: 10px;
+    }  
+    .notTer .new2{
+        grid-area: new2tm;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 12px;
+
+    }
+    .notTer .new2 a img{
+        border: solid 2px #CCD5D9; 
+        width: 120px;
+        height: 80px;
+    }
+    .notTer .new2 h2{
+        font-size: 10px;
+    }
+    .notTer .new3{
+        grid-area: new3tm;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .notTer .new3 a img{
+        border: solid 2px #CCD5D9; 
+        width: 120px;
+        height: 80px;
+    }
+    .notTer .new3 h2{
+        font-size: 10px;
+    }
+    .notTer .new4{
+        grid-area: new4tm;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .notTer .new4 a img{
+        border: solid 2px #CCD5D9; 
+        width: 120px;
+        height: 80px;
+    }
+    .notTer .new4 h2{
+        font-size: 10px;
+    }
+
+}
+
+
+    
