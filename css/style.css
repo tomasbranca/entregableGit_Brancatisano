@@ -58,6 +58,7 @@ nav ul li a{
     border: solid 5px #f2f2f2;
     padding: 20px 30px;
     cursor: pointer;
+    transition: background-color 0.5s;
 }
 nav ul li a:hover{
     background-color: #052A43;
@@ -143,6 +144,7 @@ footer a{
     color: #071D26;
     grid-area: info;
     justify-content: center;
+    transition: color 0.5s;
 }
 .info:hover{
     color: #052A43;  
@@ -179,6 +181,7 @@ footer a{
     text-decoration: none;
     margin-right: 20px;
     color: #071D26;
+    transition: color 0.5s;
 }
 .title:hover{
     color: #052A43;  
@@ -242,6 +245,7 @@ footer a{
     color: #071D26;
     font-family: FranklinGothic;
     font-size: 20px;
+    transition: color 0.5s;
 
 }
 .new__txt:hover{
@@ -336,6 +340,7 @@ footer a{
     color: #071D26;
     font-size: 40px;
     text-decoration: none;
+    transition: color 0.5s;
 }
 .notPrin h1:hover{
     color: #052A43;
@@ -376,6 +381,7 @@ footer a{
     color: #071D26;
     font-size: 20px;
     text-decoration: none;
+    transition: color 0.5s;
 }
 .notSec .new2{
     grid-area: new2;
@@ -423,6 +429,7 @@ footer a{
     color: #071D26;
     font-size: 20px;
     text-decoration: none;
+    transition: color 0.5s;
 }
 .notTer .new2{
     display: flex;
@@ -445,6 +452,7 @@ footer a{
     color: #071D26;
     font-size: 20px;
     text-decoration: none;
+    transition: color 0.5s;
 }
 .notTer .new3{
     display: flex;
@@ -467,6 +475,7 @@ footer a{
     color: #071D26;
     font-size: 20px;
     text-decoration: none;
+    transition: color 0.5s;
 }
 .notTer .new4{
     display: flex;
@@ -489,6 +498,7 @@ footer a{
     color: #071D26;
     font-size: 20px;
     text-decoration: none;
+    transition: color 0.5s;
 }
 .new1 h2:hover{
     color: #052A43;
