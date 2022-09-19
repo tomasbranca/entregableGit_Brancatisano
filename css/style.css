@@ -83,12 +83,13 @@ footer a{
 .pagIndex{
     display: grid;
     grid-template-columns: 2.5fr 2.5fr 2.5fr 2fr;
-    grid-template-rows: 3fr 5fr 2.5fr;
+    grid-template-rows: 2fr 3.5fr 2.5fr 3.5fr;
     grid-template-areas:
     "titulos titulos titulos titulos"
     "info info info puestos"
-    "info2 info2 info2 info2";
-    height: 150vh;
+    "info2 info2 info2 info2"
+    "part part part part";
+    height: 250vh;
 }
 
 .titulos{
@@ -124,15 +125,20 @@ footer a{
 }
 .puestos a iframe{
     border: solid 5px #CCD5D9;
-    width: 200px;
-    overflow-y: hidden;
+    width: 210px;
+    height: 150px;
+    overflow: hidden;
+    overflow-y: hidden ;
     overflow-x: hidden;
     
 }
-.west{
-    height: 250px;
+.rank a .west{
+    height: 230px;
     overflow: hidden;
+    overflow-y: hidden ;
+    overflow-x: hidden ;
 }
+
 .puestos__txt{
     font-family: FranklinGothic2;
     font-weight:bolder;
@@ -209,10 +215,9 @@ footer a{
     grid-area: new1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 267px ;
-    transition: padding 0.5s;
+    width: 267px;
     cursor: pointer;
+    transition: padding 0.5s;
 }
 .new1:hover{
     padding: 10px;
@@ -235,8 +240,7 @@ footer a{
 
 .new__pic img{
     border: solid 5px #CCD5D9;
-    width: 267px ;
-    height: 150px;
+    width: 267px;
 }
 
 .new__txt{
@@ -256,7 +260,7 @@ footer a{
     grid-area: new2;
     display: flex;
     flex-direction: column;
-    width: 267px ;
+    width: 267px;
     transition: padding 0.5s;
     cursor: pointer;
 
@@ -266,7 +270,7 @@ footer a{
     grid-area: new3;
     display: flex;
     flex-direction: column;
-    width: 267px ;
+    width: 267px;
     transition: padding 0.5s;
     cursor: pointer;
 
@@ -276,13 +280,54 @@ footer a{
     grid-area: new4;
     display: flex;
     flex-direction: column;
-    width: 267px ;
+    width: 267px;
     transition: padding 0.5s;
     cursor: pointer;
 
 }
+.wcf{
+    grid-area: part;
+}
+.wcf h1{
+    color: #071D26;
+    font-family: FranklinGothic;
+}
 
+.wcf2{
+    display: flex;
+    justify-content: space-between;
+}
+.partidos{
+    width: 748px;
+    height: 420px;
 
+}
+.partido img{
+    width: 598.4px;
+    height: 420px;
+    border: solid 5px #CCD5D9;
+}
+.games h5{
+    -webkit-text-stroke: 0.5px #071D26;
+    color: #F2F2F2;
+    font-weight: bolder;
+    background-color: black;
+}
+.games p{
+    -webkit-text-stroke: 0.25px #071D26;
+    color: #F2F2F2;
+    font-weight: bolder;
+    background-color: black;
+}
+.stats{
+    width: 290px;
+}
+.stats .carousel-inner .carousel-item .card .card-body .card-title{
+    font-weight: bolder;
+}
+.stats .carousel-inner .carousel-item .card .card-body .card-text{
+    font-weight: bolder;
+}
 
 
 
@@ -412,7 +457,7 @@ footer a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 231px;
+    width: 267px;
     cursor: pointer;
 }
 .notTer .new1 a{
@@ -422,7 +467,7 @@ footer a{
 .notTer .new1 a img{
     border: solid 5px #CCD5D9;
     display: inline;
-    width: 231px;
+    width: 267px;
 }
 .notTer .new1 h2{
     font-family:FranklinGothic;
@@ -435,7 +480,7 @@ footer a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 231px;
+    width: 267px;
     cursor: pointer;
 }
 .notTer .new2 a{
@@ -445,7 +490,7 @@ footer a{
 .notTer .new2 a img{
     border: solid 5px #CCD5D9;
     display: inline;
-    width: 231px;
+    width: 267px;
 }
 .notTer .new2 h2{
     font-family:FranklinGothic;
@@ -458,7 +503,7 @@ footer a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 231px;
+    width: 267px;
     cursor: pointer;
 }
 .notTer .new3 a{
@@ -468,7 +513,7 @@ footer a{
 .notTer .new3 a img{
     border: solid 5px #CCD5D9;
     display: inline;
-    width: 231px;
+    width: 267px;
 }
 .notTer .new3 h2{
     font-family:FranklinGothic;
@@ -481,7 +526,7 @@ footer a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 231px;
+    width: 267px;
     cursor: pointer;
 }
 .notTer .new4 a{
@@ -491,7 +536,7 @@ footer a{
 .notTer .new4 a img{
     border: solid 5px #CCD5D9;
     display: inline;
-    width: 231px;
+    width: 267px;
 }
 .notTer .new4 h2{
     font-family:FranklinGothic;
