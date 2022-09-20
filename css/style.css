@@ -27,12 +27,12 @@ header{
     top: 0%;
 }
 
-nav{
+.barraNav nav{
     width: 100%;
     overflow: hidden;
 }
 
-nav ul {
+.barraNav nav ul {
     display: flex;
     justify-content: stretch;
     padding: 0 50px;
@@ -40,12 +40,12 @@ nav ul {
 
 }
 
-nav ul li {
+.barraNav nav ul li {
     justify-self: stretch;
     width: 100%;
 }
 
-nav ul li a{
+.barraNav nav ul li a{
     background-color: #071D26;
     text-decoration: none;
     text-align: center;
@@ -60,7 +60,7 @@ nav ul li a{
     cursor: pointer;
     transition: background-color 0.5s;
 }
-nav ul li a:hover{
+.barraNav nav ul li a:hover{
     background-color: #052A43;
 }
 
@@ -328,14 +328,16 @@ footer a{
 .stats .carousel-inner .carousel-item .card .card-body .card-text{
     font-weight: bolder;
 }
-
+.card{
+    overflow: hidden;
+}
 
 
 
 .pagNoticias{
     display: grid;
     grid-template-columns: 2.5fr 2.5fr 1.5fr;
-    grid-template-rows: 2fr 7fr 3fr;
+    grid-template-rows: 150px 7fr 3fr;
     grid-template-areas:
     "titulo titulo titulo"
     "notPrin notPrin notSec"
@@ -560,7 +562,42 @@ footer a{
 
 
 
+.pagPlantilla{
+    display: grid;
+    grid-template-rows: 150px 4fr;
+    grid-template-areas:
+    "tituloNoticias"
+    "cards";
+    height: 100vh;
+}
+.pagPlantilla .titulo{
+    grid-area: tituloNoticias;
+    color: #f2f2f2;
+    text-align:start;
+    font-family:Impact;
+    font-style: italic;
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #071D26;
+}
+.pagPlantilla .titulo h1{
+    font-size: 80px;
+    margin-left: 15px;
+    font-weight: lighter;
+}
+.pagPlantilla .players{
+    grid-area: cards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
 
+}
+.pagPlantilla .players .card{
+    height: 450px;
+}
 
 
 @font-face {
