@@ -1,0 +1,241 @@
+.pagNoticias{
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 1.5fr;
+    grid-template-rows: 150px 7fr 3fr;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "notPrin notPrin notSec"
+    "notTer notTer notTer";
+    height: 150vh;
+    .titulo{
+        grid-area: titulo;
+        color: #f2f2f2;
+        text-align:start;
+        font-family:Impact;
+        font-style: italic;
+        line-height: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #071D26;
+        h2{
+            font-size: 80px;
+            margin-left: 15px;
+            font-weight: lighter;
+        }
+    }
+    .notPrin{
+        grid-area: notPrin;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+        a{
+            display: flex;
+            justify-content: center;
+            img{
+                border: solid 5px #CCD5D9;
+                display: inline;
+            }
+        }
+        h1{
+            font-family:FranklinGothic;
+            color: #071D26;
+            font-size: 40px;
+            text-decoration: none;
+            transition: color 0.5s;
+            &:hover{
+                color: #052A43;
+            }
+        }
+    }
+    .notSec{
+        grid-area: notSec;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "new1"
+        "new2";
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .new1{
+            grid-area: new1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            cursor: pointer;
+            width: 267px;
+            transition: padding 0.5s;
+            a{
+                display: flex;
+                justify-content: center;
+                img{
+                    border: solid 5px #CCD5D9;
+                    display: inline; 
+                }
+            }
+            &:hover{
+                padding:10px;
+            }
+        }
+        h2{
+            font-family:FranklinGothic;
+            color: #071D26;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.5s;
+        }
+        .new2{
+            grid-area: new2;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            cursor: pointer;
+            width: 267px;
+            transition: padding 0.5s;
+            a{
+                display: flex;
+                justify-content: center;
+                img{
+                    border: solid 5px #CCD5D9;
+                    display: inline;
+                }
+            }
+            &:hover{
+                padding:10px;
+            }
+        }
+    }
+    .notTer{
+        grid-area: notTer;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "new1 new2 new3 new4";
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .new1{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 267px;
+            cursor: pointer;
+            transition: padding 0.5s;
+            a{
+                display: flex;
+                justify-content: center;
+                img{
+                    border: solid 5px #CCD5D9;
+                    display: inline;
+                    width: 267px;
+                }
+            }
+            h2{
+                font-family:FranklinGothic;
+                color: #071D26;
+                font-size: 20px;
+                text-decoration: none;
+                transition: color 0.5s;
+                &:hover{
+                    color: #052A43;
+                }
+            }
+            &:hover{
+                padding: 10px;
+            }
+        }
+        .new2{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 267px;
+            cursor: pointer;
+            transition: padding 0.5s;
+            a{
+                display: flex;
+                justify-content: center;
+                img{
+                    border: solid 5px #CCD5D9;
+                    display: inline;
+                    width: 267px;
+                }
+            }
+            h2{
+                font-family:FranklinGothic;
+                color: #071D26;
+                font-size: 20px;
+                text-decoration: none;
+                transition: color 0.5s;
+                &:hover{
+                    color: #052A43;
+                }
+            }
+            &:hover{
+                padding: 10px;
+            }
+        }
+        .new3{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 267px;
+            cursor: pointer;
+            transition: padding 0.5s;
+            a{
+                display: flex;
+                justify-content: center;
+                img{
+                    border: solid 5px #CCD5D9;
+                    display: inline;
+                    width: 267px;
+                }
+            }
+            h2{
+                font-family:FranklinGothic;
+                color: #071D26;
+                font-size: 20px;
+                text-decoration: none;
+                transition: color 0.5s;
+                &:hover{
+                    color: #052A43;
+                }
+            }
+            &:hover{
+                padding: 10px;
+            }
+        }
+        .new4{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 267px;
+            cursor: pointer;
+            transition: padding 0.5s;
+            a{
+                display: flex;
+                justify-content: center;
+                img{
+                    border: solid 5px #CCD5D9;
+                    display: inline;
+                    width: 267px;
+                }
+            }
+            h2{
+                font-family:FranklinGothic;
+                color: #071D26;
+                font-size: 20px;
+                text-decoration: none;
+                transition: color 0.5s;
+                &:hover{
+                    color: #052A43;
+                }
+            }
+            &:hover{
+                padding: 10px;
+            }
+        }
+    }
+}

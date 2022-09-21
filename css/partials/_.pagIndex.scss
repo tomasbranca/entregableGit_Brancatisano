@@ -1,0 +1,236 @@
+.pagIndex{
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2fr;
+    grid-template-rows: 2fr 3.5fr 2.5fr 3.5fr;
+    grid-template-areas:
+    "titulos titulos titulos titulos"
+    "info info info puestos"
+    "info2 info2 info2 info2"
+    "part part part part";
+    height: 250vh;
+    .titulos{
+        color: #F2F2F2;
+        text-align: center;
+        font-family:Impact;
+        font-style: italic;
+        line-height: 0px;
+        grid-area: titulos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #071D26;
+    }
+    .titulos__title {
+        font-size: 100px;
+        font-weight: lighter;
+    }   
+    .titulos__subtitle{
+        font-size: 35px;
+        font-weight: lighter;
+    }
+    .puestos{
+        text-align: center; 
+        grid-area: puestos;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        a iframe{
+            border: solid 5px #CCD5D9;
+            width: 210px;
+            height: 150px;
+            overflow: hidden;
+            overflow-y: hidden ;
+            overflow-x: hidden;
+            .rank a .west{
+                height: 230px;
+                overflow: hidden;
+                overflow-y: hidden ;
+                overflow-x: hidden ;
+            }
+        }
+        .puestos__txt{
+            font-family: FranklinGothic2;
+            font-weight:bolder;
+            color: #071D26;
+        }
+    }
+    .info{
+        font-family:FranklinGothic;
+        color: #071D26;
+        grid-area: info;
+        justify-content: center;
+        transition: color 0.5s;
+        &:hover{
+            color: #052A43;  
+        }
+        .un{
+            margin-left: 20px;
+            font-size: 25px;
+            font-weight:bold
+        }
+        .base{
+            display: flex;
+            cursor: pointer;
+            .txt{
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                .title{
+                    font-size: 40px;
+                    text-decoration: none;
+                    margin-right: 20px;
+                    color: #071D26;
+                    transition: color 0.5s;
+                    &:hover{
+                        color: #052A43; 
+                    }
+                }
+                .resume{
+                    font-family: FranklinGothic2;
+                    font-weight: bolder;
+                    margin-right: 20px;
+                    color: #071D26;
+                }
+            }
+            .pic{
+                margin-left: 20px; 
+                img{
+                    border: solid 5px #CCD5D9;
+                    width: 400px;
+                    height: 400px;
+                }  
+            }
+            
+        }
+        
+    }
+    .info2{
+        grid-area: info2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "new1 new2 new3 new4";
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        .new1{
+            grid-area: new1;
+            display: flex;
+            flex-direction: column;
+            width: 267px;
+            cursor: pointer;
+            transition: padding 0.5s;
+            &:hover{
+                padding: 10px;
+            }
+        }
+        .new2{
+            grid-area: new2;
+            display: flex;
+            flex-direction: column;
+            width: 267px;
+            transition: padding 0.5s;
+            cursor: pointer;
+            &:hover{
+                padding: 10px;
+            }
+        }
+        .new3{
+            grid-area: new3;
+            display: flex;
+            flex-direction: column;
+            width: 267px;
+            transition: padding 0.5s;
+            cursor: pointer;
+            &:hover{
+                padding: 10px;
+            }
+        }
+        .new4{
+            grid-area: new4;
+            display: flex;
+            flex-direction: column;
+            width: 267px;
+            transition: padding 0.5s;
+            cursor: pointer;
+            &:hover{
+                padding: 10px;
+            }
+        }
+    }
+    .new__pic{
+        display: flex;
+        justify-content: center;
+        img{
+            border: solid 5px #CCD5D9;
+            width: 267px;
+        }
+    } 
+    .new__txt{
+        display: flex;
+        text-align: center;
+        color: #071D26;
+        font-family: FranklinGothic;
+        font-size: 20px;
+        transition: color 0.5s;
+        &:hover{
+            color: #052A43;
+        }
+    
+    }
+    .wcf{
+        grid-area: part;
+        h1{
+            color: #071D26;
+            font-family: FranklinGothic;
+        }
+        .wcf2{
+            display: flex;
+            justify-content: space-between;
+            .partidos{
+                width: 748px;
+                height: 420px;
+                img{
+                    width: 598.4px;
+                    height: 420px;
+                    border: solid 5px #CCD5D9;
+                }
+                .games{
+                    h5{
+                        -webkit-text-stroke: 0.5px #071D26;
+                        color: #F2F2F2;
+                        font-weight: bolder;
+                        background-color: black;
+                    }
+                    p{
+                        -webkit-text-stroke: 0.25px #071D26;
+                        color: #F2F2F2;
+                        font-weight: bolder;
+                        background-color: black;
+                    }
+                }
+            }
+            .stats{
+                width: 290px;
+                .carousel-inner{
+                    .carousel-item{
+                        .card{
+                            overflow: hidden;
+                            .card-body{
+                                h5{
+                                    font-weight: bolder;
+                                }
+                                p{
+                                    font-weight: bolder;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
