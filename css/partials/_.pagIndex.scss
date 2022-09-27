@@ -1,13 +1,13 @@
 .pagIndex{
     display: grid;
     grid-template-columns: 2.5fr 2.5fr 2.5fr 2fr;
-    grid-template-rows: 2fr 3.5fr 2.5fr 3.5fr;
+    grid-template-rows: 2fr 3.5fr 1.5fr 3.5fr;
     grid-template-areas:
     "titulos titulos titulos titulos"
     "info info info puestos"
     "info2 info2 info2 info2"
     "part part part part";
-    height: 250vh;
+    height: 220vh;
     .titulos{
         color: #F2F2F2;
         text-align: center;
@@ -33,7 +33,8 @@
         grid-area: puestos;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        margin-top: 50px;
+        justify-content: stretch;
         a iframe{
             border: solid 5px #CCD5D9;
             width: 210px;
@@ -41,12 +42,15 @@
             overflow: hidden;
             overflow-y: hidden ;
             overflow-x: hidden;
-            .rank a .west{
-                height: 230px;
-                overflow: hidden;
-                overflow-y: hidden ;
-                overflow-x: hidden ;
+            .rank {
+                a .west{
+                    height: 230px;
+                    overflow: hidden;
+                    overflow-y: hidden ;
+                    overflow-x: hidden ;
+                }
             }
+                
         }
         .puestos__txt{
             font-family: FranklinGothic2;
@@ -117,6 +121,7 @@
             grid-area: new1;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             width: 267px;
             cursor: pointer;
             transition: padding 0.5s;
@@ -128,6 +133,7 @@
             grid-area: new2;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             width: 267px;
             transition: padding 0.5s;
             cursor: pointer;
@@ -139,6 +145,7 @@
             grid-area: new3;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             width: 267px;
             transition: padding 0.5s;
             cursor: pointer;
@@ -150,6 +157,7 @@
             grid-area: new4;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             width: 267px;
             transition: padding 0.5s;
             cursor: pointer;
@@ -185,8 +193,9 @@
             font-family: FranklinGothic;
         }
         .wcf2{
+
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             .partidos{
                 width: 748px;
                 height: 420px;
@@ -231,6 +240,230 @@
         }
     }
 }
+@media screen and (max-width: 360px){
+    .pagIndex{
+        display: grid;
+        grid-template-rows: 2fr 3.5fr 2fr 3.5fr 3.5fr;
+        grid-template-areas:
+        "titulos"
+        "info"
+        "puestos"
+        "info2"
+        "part";
+        height: 200vh;
+        .titulos{
+            color: #F2F2F2;
+            text-align: center;
+            font-family:Impact;
+            font-style: italic;
+            line-height: 0px;
+            grid-area: titulos;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #071D26;
+        }
+        .titulos__title {
+            font-size: 30px;
+            font-weight: lighter;
+        }   
+        .titulos__subtitle{
+            font-size: 15px;
+            font-weight: lighter;
+        }
 
+        .info{
+            .un{
+                margin-left: 5px;
+                font-size: 15px;
+                font-weight:bold
+            }
+            .base{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .txt{
+                    margin-left: 3px;
+                    display: flex;
+                    flex-direction: column;
+                    .title{
+                        font-size: 20px;
+                    }
+                    .resume{
+                        display: none;
+                    }
+                }
+                .pic{
+                    display: flex;
+                    margin-left: 7px;
+                    img{
+                        border: solid 5px #CCD5D9;
+                        width: 250px;
+                        height: 250px;
+                    }  
+                }
+                
+            }
+            
+        }
+        .puestos{
+            text-align: center; 
+            grid-area: puestos;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            justify-content: space-around;
+            a iframe{
+                border: solid 5px #CCD5D9;
+                width: 130px;
+                height: 150px;
+                overflow: hidden;
+                overflow-y: hidden ;
+                overflow-x: hidden;
+                .rank {
+                    a .west{
+                        height: 230px;
+                        overflow: hidden;
+                        overflow-y: hidden ;
+                        overflow-x: hidden ;
+                    }
+                }
+                    
+            }
+            .puestos__txt{
+                font-family: FranklinGothic2;
+                font-weight:bolder;
+                color: #071D26;
+                font-size: small;
+            }
+        }
+        .info2{
+            grid-area: info2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "new1 new2"
+            "new3 new4";
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            .new1{
+                grid-area: new1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 125px;
+                cursor: pointer;
+                transition: padding 0.5s;
+            }
+            .new2{
+                grid-area: new2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 125px;
+                transition: padding 0.5s;
+                cursor: pointer;
+            }
+            .new3{
+                grid-area: new3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 125px;
+                transition: padding 0.5s;
+                cursor: pointer;
+            }
+            .new4{
+                grid-area: new4;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 125px;
+                transition: padding 0.5s;
+                cursor: pointer;
+            }
+        }
+        .new__pic{
+            display: flex;
+            justify-content: center;
+            img{
+                border: solid 5px #CCD5D9;
+                width: 125px;
+            }
+        } 
+        .new__txt{
+            display: flex;
+            text-align: center;
+            color: #071D26;
+            font-family: FranklinGothic;
+            font-size: 10px;
+            transition: color 0.5s;
+            &:hover{
+                color: #052A43;
+            }
+        }
+        .wcf{
+            display: none;
+            grid-area: part;
+            h1{
+                color: #071D26;
+                font-family: FranklinGothic;
+            }
+            .wcf2{
+                display: flex;
+                justify-content: space-evenly;
+                display: grid;
+                grid-template-rows: 
+                "partido"
+                "stats";
+                .partidos{
+                    grid-area: partido;
+                    width: 748px;
+                    height: 420px;
+                    img{
+                        width: 598.4px;
+                        height: 420px;
+                        border: solid 5px #CCD5D9;
+                    }
+                    .games{
+                        h5{
+                            -webkit-text-stroke: 0.5px #071D26;
+                            color: #F2F2F2;
+                            font-weight: bolder;
+                            background-color: black;
+                        }
+                        p{
+                            -webkit-text-stroke: 0.25px #071D26;
+                            color: #F2F2F2;
+                            font-weight: bolder;
+                            background-color: black;
+                        }
+                    }
+                }
+                .stats{
+                    grid-area: stats;
+                    .carousel-inner{
+                        .carousel-item{
+                            .card{
+                                width: 150px;
+                                overflow: hidden;
+                                .card-body{
+                                    h5{
+                                        font-weight: bolder;
+                                    }
+                                    p{
+                                        font-weight: bolder;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
