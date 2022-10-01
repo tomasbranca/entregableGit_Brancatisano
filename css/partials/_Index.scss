@@ -7,9 +7,9 @@
     "info info info puestos"
     "info2 info2 info2 info2"
     "part part part part";
-    height: 220vh;
+    height: 245vh;
     .titulos{
-        color: #F2F2F2;
+        color: #F2F2F2; 
         text-align: center;
         font-family:Impact;
         font-style: italic;
@@ -18,7 +18,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #071D26;
+        background-color: map-get($colores , colorPrimario); 
     }
     .titulos__title {
         font-size: 100px;
@@ -36,7 +36,7 @@
         margin-top: 50px;
         justify-content: stretch;
         a iframe{
-            border: solid 5px #CCD5D9;
+            border: solid 5px map-get($colores , colorSecundario); 
             width: 210px;
             height: 150px;
             overflow: hidden;
@@ -55,17 +55,17 @@
         .puestos__txt{
             font-family: FranklinGothic2;
             font-weight:bolder;
-            color: #071D26;
+            color: map-get($colores , colorPrimario); 
         }
     }
     .info{
         font-family:FranklinGothic;
-        color: #071D26;
+        color: map-get($colores , colorPrimario); 
         grid-area: info;
         justify-content: center;
         transition: color 0.5s;
         &:hover{
-            color: #052A43;  
+            color: map-get($colores , colorTerceario);
         }
         .un{
             margin-left: 20px;
@@ -83,23 +83,23 @@
                     font-size: 40px;
                     text-decoration: none;
                     margin-right: 20px;
-                    color: #071D26;
+                    color: map-get($colores , colorPrimario); 
                     transition: color 0.5s;
                     &:hover{
-                        color: #052A43; 
+                        color: map-get($colores , colorTerceario); 
                     }
                 }
                 .resume{
                     font-family: FranklinGothic2;
                     font-weight: bolder;
                     margin-right: 20px;
-                    color: #071D26;
+                    color: map-get($colores , colorPrimario); 
                 }
             }
             .pic{
                 margin-left: 20px; 
                 img{
-                    border: solid 5px #CCD5D9;
+                    border: solid 5px map-get($colores , colorSecundario); 
                     width: 400px;
                     height: 400px;
                 }  
@@ -119,77 +119,45 @@
         justify-content:space-around;
         .new1{
             grid-area: new1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 267px;
-            cursor: pointer;
-            transition: padding 0.5s;
-            &:hover{
-                padding: 10px;
-            }
+            @extend %noticia;
         }
         .new2{
             grid-area: new2;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 267px;
-            transition: padding 0.5s;
-            cursor: pointer;
-            &:hover{
-                padding: 10px;
-            }
+            @extend %noticia;
         }
         .new3{
             grid-area: new3;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 267px;
-            transition: padding 0.5s;
-            cursor: pointer;
-            &:hover{
-                padding: 10px;
-            }
+            @extend %noticia;
         }
         .new4{
             grid-area: new4;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 267px;
-            transition: padding 0.5s;
-            cursor: pointer;
-            &:hover{
-                padding: 10px;
-            }
+            @extend %noticia;
         }
     }
     .new__pic{
         display: flex;
         justify-content: center;
         img{
-            border: solid 5px #CCD5D9;
+            border: solid 5px map-get($colores , colorSecundario); 
             width: 267px;
         }
     } 
     .new__txt{
         display: flex;
         text-align: center;
-        color: #071D26;
+        color: map-get($colores , colorPrimario); 
         font-family: FranklinGothic;
         font-size: 20px;
         transition: color 0.5s;
         &:hover{
-            color: #052A43;
+            color: map-get($colores , colorTerceario);
         }
     
     }
     .wcf{
         grid-area: part;
         h1{
-            color: #071D26;
+            color: map-get($colores , colorPrimario); 
             font-family: FranklinGothic;
         }
         .wcf2{
@@ -202,20 +170,20 @@
                 img{
                     width: 598.4px;
                     height: 420px;
-                    border: solid 5px #CCD5D9;
+                    border: solid 5px map-get($colores , colorSecundario); 
                 }
                 .games{
                     h5{
-                        -webkit-text-stroke: 0.5px #071D26;
+                        -webkit-text-stroke: 0.5px map-get($colores , colorPrimario); 
                         color: #F2F2F2;
                         font-weight: bolder;
-                        background-color: black;
+                        @include color($color:black);
                     }
                     p{
-                        -webkit-text-stroke: 0.25px #071D26;
+                        -webkit-text-stroke: 0.25px map-get($colores , colorPrimario); 
                         color: #F2F2F2;
                         font-weight: bolder;
-                        background-color: black;
+                        @include color($color:black);
                     }
                 }
             }
@@ -240,10 +208,12 @@
         }
     }
 }
+
 @media screen and (max-width: 360px){
     .pagIndex{
         display: grid;
         grid-template-rows: 2fr 3.5fr 2fr 3.5fr 3.5fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
         "titulos"
         "info"
@@ -252,7 +222,7 @@
         "part";
         height: 200vh;
         .titulos{
-            color: #F2F2F2;
+            color: #F2F2F2; 
             text-align: center;
             font-family:Impact;
             font-style: italic;
@@ -261,7 +231,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #071D26;
+            background-color: map-get($colores , colorPrimario); 
         }
         .titulos__title {
             font-size: 30px;
@@ -297,7 +267,7 @@
                     display: flex;
                     margin-left: 7px;
                     img{
-                        border: solid 5px #CCD5D9;
+                        border: solid 5px map-get($colores , colorSecundario); 
                         width: 250px;
                         height: 250px;
                     }  
@@ -314,7 +284,7 @@
             margin-top: 10px;
             justify-content: space-around;
             a iframe{
-                border: solid 5px #CCD5D9;
+                border: solid 5px map-get($colores , colorSecundario); 
                 width: 130px;
                 height: 150px;
                 overflow: hidden;
@@ -333,7 +303,7 @@
             .puestos__txt{
                 font-family: FranklinGothic2;
                 font-weight:bolder;
-                color: #071D26;
+                color: map-get($colores , colorPrimario); 
                 font-size: small;
             }
         }
@@ -389,26 +359,26 @@
             display: flex;
             justify-content: center;
             img{
-                border: solid 5px #CCD5D9;
+                border: solid 5px map-get($colores , colorSecundario); 
                 width: 125px;
             }
         } 
         .new__txt{
             display: flex;
             text-align: center;
-            color: #071D26;
+            color: map-get($colores , colorPrimario); 
             font-family: FranklinGothic;
             font-size: 10px;
             transition: color 0.5s;
             &:hover{
-                color: #052A43;
+                color: map-get($colores , colorTerceario);
             }
         }
         .wcf{
             display: none;
             grid-area: part;
             h1{
-                color: #071D26;
+                color: map-get($colores , colorPrimario); 
                 font-family: FranklinGothic;
             }
             .wcf2{
@@ -425,20 +395,20 @@
                     img{
                         width: 598.4px;
                         height: 420px;
-                        border: solid 5px #CCD5D9;
+                        border: solid 5px map-get($colores , colorSecundario); 
                     }
                     .games{
                         h5{
-                            -webkit-text-stroke: 0.5px #071D26;
+                            -webkit-text-stroke: 0.5px map-get($colores , colorPrimario); 
                             color: #F2F2F2;
                             font-weight: bolder;
-                            background-color: black;
+                            @include color($color:black);
                         }
                         p{
-                            -webkit-text-stroke: 0.25px #071D26;
+                            -webkit-text-stroke: 0.25px map-get($colores , colorPrimario); 
                             color: #F2F2F2;
                             font-weight: bolder;
-                            background-color: black;
+                            @include color($color:black);
                         }
                     }
                 }

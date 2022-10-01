@@ -1,74 +1,13 @@
-body {
-  background-image: url("../images/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-.logo img {
-  width: 150px;
-  height: 150px;
-  margin: 0;
-  padding: 0;
-}
-
-.pag {
-  margin-left: 125px;
-  margin-right: 125px;
-  background-color: #F2F2F2;
-  border: solid 5px #CCD5D9;
-  overflow: hidden;
-}
-
-header {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0%;
-}
-
-.barraNav nav {
-  width: 100%;
-  overflow: hidden;
-}
-.barraNav nav ul {
+.pagNoticias .notTer .new4, .pagNoticias .notTer .new3, .pagNoticias .notTer .new2, .pagNoticias .notTer .new1, .pagNoticias .notSec .new2, .pagNoticias .notSec .new1, .pagIndex .info2 .new4, .pagIndex .info2 .new3, .pagIndex .info2 .new2, .pagIndex .info2 .new1 {
   display: flex;
-  justify-content: stretch;
-  padding: 0 50px;
-  list-style-type: none;
-}
-.barraNav nav ul li {
-  justify-self: stretch;
-  width: 100%;
-}
-
-.barraNav nav ul li a {
-  background-color: #071D26;
-  text-decoration: none;
+  flex-direction: column;
   text-align: center;
-  display: block;
-  color: #f2f2f2;
-  list-style: none;
-  font-family: Impact;
-  font-style: italic;
-  font-size: 25px;
-  border: solid 5px #f2f2f2;
-  padding: 20px 30px;
+  width: 267px;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: padding 0.5s;
 }
-.barraNav nav ul li a:hover {
-  background-color: #052A43;
-}
-
-footer a {
-  text-decoration: none;
-  color: #F2F2F2;
-  margin-left: 125px;
-  font-family: Impact;
-  font-style: italic;
-  font-size: 25px;
-  font-size: x-small;
+.pagNoticias .notTer .new4:hover, .pagNoticias .notTer .new3:hover, .pagNoticias .notTer .new2:hover, .pagNoticias .notTer .new1:hover, .pagNoticias .notSec .new2:hover, .pagNoticias .notSec .new1:hover, .pagIndex .info2 .new4:hover, .pagIndex .info2 .new3:hover, .pagIndex .info2 .new2:hover, .pagIndex .info2 .new1:hover {
+  padding: 10px;
 }
 
 .pagIndex {
@@ -76,7 +15,7 @@ footer a {
   grid-template-columns: 2.5fr 2.5fr 2.5fr 2fr;
   grid-template-rows: 2fr 3.5fr 1.5fr 3.5fr;
   grid-template-areas: "titulos titulos titulos titulos" "info info info puestos" "info2 info2 info2 info2" "part part part part";
-  height: 220vh;
+  height: 245vh;
 }
 .pagIndex .titulos {
   color: #F2F2F2;
@@ -184,51 +123,15 @@ footer a {
 }
 .pagIndex .info2 .new1 {
   grid-area: new1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 267px;
-  cursor: pointer;
-  transition: padding 0.5s;
-}
-.pagIndex .info2 .new1:hover {
-  padding: 10px;
 }
 .pagIndex .info2 .new2 {
   grid-area: new2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 267px;
-  transition: padding 0.5s;
-  cursor: pointer;
-}
-.pagIndex .info2 .new2:hover {
-  padding: 10px;
 }
 .pagIndex .info2 .new3 {
   grid-area: new3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 267px;
-  transition: padding 0.5s;
-  cursor: pointer;
-}
-.pagIndex .info2 .new3:hover {
-  padding: 10px;
 }
 .pagIndex .info2 .new4 {
   grid-area: new4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 267px;
-  transition: padding 0.5s;
-  cursor: pointer;
-}
-.pagIndex .info2 .new4:hover {
-  padding: 10px;
 }
 .pagIndex .new__pic {
   display: flex;
@@ -298,6 +201,7 @@ footer a {
   .pagIndex {
     display: grid;
     grid-template-rows: 2fr 3.5fr 2fr 3.5fr 3.5fr;
+    grid-template-columns: 1fr;
     grid-template-areas: "titulos" "info" "puestos" "info2" "part";
     height: 200vh;
   }
@@ -503,7 +407,7 @@ footer a {
 }
 .pagNoticias .titulo {
   grid-area: titulo;
-  color: #f2f2f2;
+  color: #F2F2F2;
   text-align: start;
   font-family: Impact;
   font-style: italic;
@@ -556,12 +460,6 @@ footer a {
 }
 .pagNoticias .notSec .new1 {
   grid-area: new1;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  cursor: pointer;
-  width: 267px;
-  transition: padding 0.5s;
 }
 .pagNoticias .notSec .new1 a {
   display: flex;
@@ -572,9 +470,6 @@ footer a {
   display: inline;
   width: 267px;
 }
-.pagNoticias .notSec .new1:hover {
-  padding: 10px;
-}
 .pagNoticias .notSec h2 {
   font-family: FranklinGothic;
   color: #071D26;
@@ -584,12 +479,6 @@ footer a {
 }
 .pagNoticias .notSec .new2 {
   grid-area: new2;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  cursor: pointer;
-  width: 267px;
-  transition: padding 0.5s;
 }
 .pagNoticias .notSec .new2 a {
   display: flex;
@@ -600,9 +489,6 @@ footer a {
   display: inline;
   width: 267px;
 }
-.pagNoticias .notSec .new2:hover {
-  padding: 10px;
-}
 .pagNoticias .notTer {
   grid-area: notTer;
   display: grid;
@@ -611,14 +497,6 @@ footer a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-.pagNoticias .notTer .new1 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 267px;
-  cursor: pointer;
-  transition: padding 0.5s;
 }
 .pagNoticias .notTer .new1 a {
   display: flex;
@@ -639,17 +517,6 @@ footer a {
 .pagNoticias .notTer .new1 h2:hover {
   color: #052A43;
 }
-.pagNoticias .notTer .new1:hover {
-  padding: 10px;
-}
-.pagNoticias .notTer .new2 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 267px;
-  cursor: pointer;
-  transition: padding 0.5s;
-}
 .pagNoticias .notTer .new2 a {
   display: flex;
   justify-content: center;
@@ -668,17 +535,6 @@ footer a {
 }
 .pagNoticias .notTer .new2 h2:hover {
   color: #052A43;
-}
-.pagNoticias .notTer .new2:hover {
-  padding: 10px;
-}
-.pagNoticias .notTer .new3 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 267px;
-  cursor: pointer;
-  transition: padding 0.5s;
 }
 .pagNoticias .notTer .new3 a {
   display: flex;
@@ -699,17 +555,6 @@ footer a {
 .pagNoticias .notTer .new3 h2:hover {
   color: #052A43;
 }
-.pagNoticias .notTer .new3:hover {
-  padding: 10px;
-}
-.pagNoticias .notTer .new4 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 267px;
-  cursor: pointer;
-  transition: padding 0.5s;
-}
 .pagNoticias .notTer .new4 a {
   display: flex;
   justify-content: center;
@@ -729,20 +574,18 @@ footer a {
 .pagNoticias .notTer .new4 h2:hover {
   color: #052A43;
 }
-.pagNoticias .notTer .new4:hover {
-  padding: 10px;
-}
 
 @media screen and (max-width: 360px) {
   .pagNoticias {
     display: grid;
     grid-template-rows: 100px 5fr 3fr 4fr;
+    grid-template-columns: 1fr;
     grid-template-areas: "titulo" "notPrin" "notSec" "notTer";
     height: 200vh;
   }
   .pagNoticias .titulo {
     grid-area: titulo;
-    color: #f2f2f2;
+    color: #F2F2F2;
     text-align: start;
     font-family: Impact;
     font-style: italic;
@@ -991,7 +834,7 @@ footer a {
 }
 .pagPlantilla .titulo {
   grid-area: tituloNoticias;
-  color: #f2f2f2;
+  color: #F2F2F2;
   text-align: start;
   font-family: Impact;
   font-style: italic;
@@ -1015,6 +858,78 @@ footer a {
 }
 .pagPlantilla .players .card {
   height: 450px;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.pag {
+  margin-left: 125px;
+  margin-right: 125px;
+  background-color: #F2F2F2;
+  border: solid 5px #CCD5D9;
+  overflow: hidden;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0%;
+}
+
+.barraNav nav {
+  width: 100%;
+  overflow: hidden;
+}
+.barraNav nav ul {
+  display: flex;
+  justify-content: stretch;
+  padding: 0 50px;
+  list-style-type: none;
+}
+.barraNav nav ul li {
+  justify-self: stretch;
+  width: 100%;
+}
+
+.barraNav nav ul li a {
+  background-color: #071D26;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #F2F2F2;
+  list-style: none;
+  font-family: Impact;
+  font-style: italic;
+  font-size: 25px;
+  border: solid 5px #F2F2F2;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.barraNav nav ul li a:hover {
+  background-color: #052A43;
+}
+
+footer a {
+  text-decoration: none;
+  margin-left: 125px;
+  font-family: Impact;
+  font-style: italic;
+  font-size: 25px;
+  font-size: x-small;
 }
 
 @font-face {
@@ -1048,7 +963,7 @@ footer a {
   }
   .barraNav nav ul li a {
     font-size: 15px;
-    border: solid 3px #f2f2f2;
+    border: solid 3px #F2F2F2;
     padding: 5px 5px;
   }
   footer a {

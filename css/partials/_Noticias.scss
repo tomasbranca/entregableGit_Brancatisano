@@ -9,7 +9,7 @@
     height: 160vh;
     .titulo{
         grid-area: titulo;
-        color: #f2f2f2;
+        color:#F2F2F2; 
         text-align:start;
         font-family:Impact;
         font-style: italic;
@@ -17,7 +17,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #071D26;
+        background-color: map-get($colores , colorPrimario); 
         h2{
             font-size: 80px;
             margin-left: 15px;
@@ -35,19 +35,19 @@
             display: flex;
             justify-content: center;
             img{
-                border: solid 5px #CCD5D9;
+                border: solid 5px map-get($colores , colorSecundario); 
                 display: inline;
                 height: 500px;
             }
         }
         h1{
             font-family:FranklinGothic;
-            color: #071D26;
+            color: map-get($colores , colorPrimario); 
             font-size: 40px;
             text-decoration: none;
             transition: color 0.5s;
             &:hover{
-                color: #052A43;
+                color: map-get($colores , colorTerceario);
             }
         }
     }
@@ -63,51 +63,35 @@
         justify-content: space-evenly;
         .new1{
             grid-area: new1;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            cursor: pointer;
-            width: 267px;
-            transition: padding 0.5s;
+            @extend %noticia;
             a{
                 display: flex;
                 justify-content: center;
                 img{
-                    border: solid 5px #CCD5D9;
+                    border: solid 5px map-get($colores , colorSecundario); 
                     display: inline; 
                     width: 267px;
                 }
             }
-            &:hover{
-                padding:10px;
-            }
         }
         h2{
             font-family:FranklinGothic;
-            color: #071D26;
+            color: map-get($colores , colorPrimario); 
             font-size: 20px;
             text-decoration: none;
             transition: color 0.5s;
         }
         .new2{
             grid-area: new2;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            cursor: pointer;
-            width: 267px;
-            transition: padding 0.5s;
+            @extend %noticia;
             a{
                 display: flex;
                 justify-content: center;
                 img{
-                    border: solid 5px #CCD5D9;
+                    border: solid 5px map-get($colores , colorSecundario ); 
                     display: inline;
                     width: 267px;
                 }
-            }
-            &:hover{
-                padding:10px;
             }
         }
     }
@@ -121,123 +105,91 @@
         flex-direction: row;
         justify-content: space-around;
         .new1{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            width: 267px;
-            cursor: pointer;
-            transition: padding 0.5s;
+            @extend %noticia;
             a{
                 display: flex;
                 justify-content: center;
                 img{
-                    border: solid 5px #CCD5D9;
+                    border: solid 5px map-get($colores , colorSecundario ); 
                     display: inline;
                     width: 267px;
                 }
             }
             h2{
                 font-family:FranklinGothic;
-                color: #071D26;
+                color: map-get($colores , colorPrimario); 
                 font-size: 20px;
                 text-decoration: none;
                 transition: color 0.5s;
                 &:hover{
-                    color: #052A43;
+                    color: map-get($colores , colorTerceario);
                 }
-            }
-            &:hover{
-                padding: 10px;
             }
         }
         .new2{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            width: 267px;
-            cursor: pointer;
-            transition: padding 0.5s;
+            @extend %noticia;
             a{
                 display: flex;
                 justify-content: center;
                 img{
-                    border: solid 5px #CCD5D9;
+                    border: solid 5px map-get($colores , colorSecundario); 
                     display: inline;
                     width: 267px;
                 }
             }
             h2{
                 font-family:FranklinGothic;
-                color: #071D26;
+                color: map-get($colores , colorPrimario); 
                 font-size: 20px;
                 text-decoration: none;
                 transition: color 0.5s;
                 &:hover{
-                    color: #052A43;
+                    color: map-get($colores , colorTerceario);
                 }
-            }
-            &:hover{
-                padding: 10px;
             }
         }
         .new3{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            width: 267px;
-            cursor: pointer;
-            transition: padding 0.5s;
+            @extend %noticia;
             a{
                 display: flex;
                 justify-content: center;
                 img{
-                    border: solid 5px #CCD5D9;
+                    border: solid 5px map-get($colores , colorSecundario); 
                     display: inline;
                     width: 267px;
                 }
             }
             h2{
                 font-family:FranklinGothic;
-                color: #071D26;
+                color: map-get($colores , colorPrimario); 
                 font-size: 20px;
                 text-decoration: none;
                 transition: color 0.5s;
                 &:hover{
-                    color: #052A43;
+                    color: map-get($colores , colorTerceario);
                 }
-            }
-            &:hover{
-                padding: 10px;
             }
         }
         .new4{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            width: 267px;
-            cursor: pointer;
-            transition: padding 0.5s;
+            @extend %noticia;
             a{
                 display: flex;
                 justify-content: center;
                 img{
-                    border: solid 5px #CCD5D9;
+                    border: solid 5px map-get($colores , colorSecundario); 
                     display: inline;
                     width: 267px;
                 }
             }
             h2{
                 font-family:FranklinGothic;
-                color: #071D26;
+                color: map-get($colores , colorPrimario); 
                 font-size: 20px;
                 text-decoration: none;
                 transition: color 0.5s;
                 &:hover{
-                    color: #052A43;
+                    color: map-get($colores , colorTerceario);
                 }
-            }
-            &:hover{
-                padding: 10px;
             }
         }
     }
@@ -247,6 +199,7 @@
     .pagNoticias{
         display: grid;
         grid-template-rows: 100px 5fr 3fr 4fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
         "titulo"
         "notPrin"
@@ -255,7 +208,7 @@
         height: 200vh;
         .titulo{
             grid-area: titulo;
-            color: #f2f2f2;
+            color:#F2F2F2; 
             text-align:start;
             font-family:Impact;
             font-style: italic;
@@ -263,7 +216,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #071D26;
+            background-color: map-get($colores , colorPrimario); 
             h2{
                 font-size: 35px;
                 margin-left: 10px;
@@ -281,7 +234,7 @@
                 display: flex;
                 justify-content: center;
                 img{
-                    border: solid 2px #CCD5D9;
+                    border: solid 2px map-get($colores , colorSecundario); 
                     display: inline;
                     width: 280px;
                     height: 200px;
@@ -289,12 +242,12 @@
             }
             h1{
                 font-family:FranklinGothic;
-                color: #071D26;
+                color: map-get($colores , colorPrimario); 
                 font-size: 20px;
                 text-decoration: none;
                 transition: color 0.5s;
                 &:hover{
-                    color: #052A43;
+                    color: map-get($colores , colorTerceario);
                 }
             }
 
@@ -321,7 +274,7 @@
                     display: flex;
                     justify-content: center;
                     img{
-                        border: solid 2px #CCD5D9;
+                        border: solid 2px map-get($colores , colorSecundario); 
                         display: inline; 
                         width: 140px;
                         height: 100px;
@@ -333,7 +286,7 @@
             }
             h2{
                 font-family:FranklinGothic;
-                color: #071D26;
+                color: map-get($colores , colorPrimario); 
                 font-size: 15px;
                 text-decoration: none;
                 transition: color 0.5s;
@@ -352,7 +305,7 @@
                     img{
                         width: 140px;
                         height: 100px;
-                        border: solid 2px #CCD5D9;
+                        border: solid 2px map-get($colores , colorSecundario); 
                         display: inline;
                     }
                 }
@@ -385,7 +338,7 @@
                     display: flex;
                     justify-content: center;
                     img{
-                        border: solid 2px #CCD5D9;
+                        border: solid 2px map-get($colores , colorSecundario); 
                         display: inline;
                         width: 140px;
                         height: 100px;
@@ -393,12 +346,12 @@
                 }
                 h2{
                     font-family:FranklinGothic;
-                    color: #071D26;
+                    color: map-get($colores , colorPrimario); 
                     font-size: 12px;
                     text-decoration: none;
                     transition: color 0.5s;
                     &:hover{
-                        color: #052A43;
+                        color: map-get($colores , colorTerceario);
                     }
                 }
                 &:hover{
@@ -416,7 +369,7 @@
                     display: flex;
                     justify-content: center;
                     img{
-                        border: solid 2px #CCD5D9;
+                        border: solid 2px map-get($colores , colorSecundario); 
                         display: inline;
                         width: 140px;
                         height: 100px;
@@ -424,12 +377,12 @@
                 }
                 h2{
                     font-family:FranklinGothic;
-                    color: #071D26;
+                    color: map-get($colores , colorPrimario); 
                     font-size: 12px;
                     text-decoration: none;
                     transition: color 0.5s;
                     &:hover{
-                        color: #052A43;
+                        color: map-get($colores , colorTerceario);
                     }
                 }
                 &:hover{
@@ -447,7 +400,7 @@
                     display: flex;
                     justify-content: center;
                     img{
-                        border: solid 2px #CCD5D9;
+                        border: solid 2px map-get($colores , colorSecundario); 
                         display: inline;
                         width: 140px;
                         height: 100px;
@@ -455,12 +408,12 @@
                 }
                 h2{
                     font-family:FranklinGothic;
-                    color: #071D26;
+                    color: map-get($colores , colorPrimario); 
                     font-size: 12px;
                     text-decoration: none;
                     transition: color 0.5s;
                     &:hover{
-                        color: #052A43;
+                        color: map-get($colores , colorTerceario);
                     }
                 }
                 &:hover{
@@ -478,7 +431,7 @@
                     display: flex;
                     justify-content: center;
                     img{
-                        border: solid 2px #CCD5D9;
+                        border: solid 2px map-get($colores , colorSecundario); 
                         display: inline;
                         width: 140px;
                         height: 100px;
@@ -486,12 +439,12 @@
                 }
                 h2{
                     font-family:FranklinGothic;
-                    color: #071D26;
+                    color: map-get($colores , colorPrimario); 
                     font-size: 12px;
                     text-decoration: none;
                     transition: color 0.5s;
                     &:hover{
-                        color: #052A43;
+                        color: map-get($colores , colorTerceario);
                     }
                 }
                 &:hover{

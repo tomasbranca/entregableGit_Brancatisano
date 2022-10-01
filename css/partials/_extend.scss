@@ -1,0 +1,11 @@
+%noticia{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 267px;
+    cursor: pointer;
+    transition: padding 0.5s;
+    &:hover{
+        padding: 10px;
+    }
+}
