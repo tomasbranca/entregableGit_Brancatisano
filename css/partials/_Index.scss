@@ -34,28 +34,22 @@
         display: flex;
         flex-direction: column;
         margin-top: 50px;
-        justify-content: stretch;
-        a iframe{
-            border: solid 5px map-get($colores , colorSecundario); 
-            width: 210px;
-            height: 150px;
-            overflow: hidden;
-            overflow-y: hidden ;
-            overflow-x: hidden;
-            .rank {
-                a .west{
-                    height: 230px;
-                    overflow: hidden;
-                    overflow-y: hidden ;
-                    overflow-x: hidden ;
+        justify-content:stretch;
+        .rank{
+            span{
+                font-family: FranklinGothic2;
+                font-weight:bolder;
+                color: map-get($colores , colorPrimario); 
+            }
+            a{
+                width: 205px;
+                display: flex;
+                iframe{
+
+                    display: flex;
+                    justify-content: center;
                 }
             }
-                
-        }
-        .puestos__txt{
-            font-family: FranklinGothic2;
-            font-weight:bolder;
-            color: map-get($colores , colorPrimario); 
         }
     }
     .info{

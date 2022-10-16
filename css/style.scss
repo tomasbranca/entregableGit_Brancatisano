@@ -37,6 +37,7 @@ header{
 }
 
 .barraNav{
+    z-index: 500;
     nav{
         width: 100%;
         overflow: hidden;
@@ -53,6 +54,7 @@ header{
         }
     }
 .barraNav nav ul li a{
+    z-index: 500;
     background-color: map-get($colores , colorPrimario);
     text-decoration: none;
     text-align: center;

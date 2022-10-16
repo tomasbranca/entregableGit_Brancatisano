@@ -4,7 +4,7 @@
     grid-template-areas:
     "tituloNoticias"
     "cards";
-    height: 100vh;
+    height: 200vh;
     .titulo{
         grid-area: tituloNoticias;
         color:#F2F2F2; 
@@ -23,12 +23,15 @@
         }
     }
     .players{
+        z-index: 1;
         grid-area: cards;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
         margin-top: 10px;
         .card{
+            z-index: 50;
             height: 450px;
         }
     }

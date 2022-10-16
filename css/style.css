@@ -45,24 +45,18 @@
   margin-top: 50px;
   justify-content: stretch;
 }
-.pagIndex .puestos a iframe {
-  border: solid 5px #CCD5D9;
-  width: 210px;
-  height: 150px;
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-.pagIndex .puestos a iframe .rank a .west {
-  height: 230px;
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-.pagIndex .puestos .puestos__txt {
+.pagIndex .puestos .rank span {
   font-family: FranklinGothic2;
   font-weight: bolder;
   color: #071D26;
+}
+.pagIndex .puestos .rank a {
+  width: 205px;
+  display: flex;
+}
+.pagIndex .puestos .rank a iframe {
+  display: flex;
+  justify-content: center;
 }
 .pagIndex .info {
   font-family: FranklinGothic;
@@ -830,7 +824,7 @@
   display: grid;
   grid-template-rows: 150px 4fr;
   grid-template-areas: "tituloNoticias" "cards";
-  height: 100vh;
+  height: 200vh;
 }
 .pagPlantilla .titulo {
   grid-area: tituloNoticias;
@@ -850,13 +844,16 @@
   font-weight: lighter;
 }
 .pagPlantilla .players {
+  z-index: 1;
   grid-area: cards;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 .pagPlantilla .players .card {
+  z-index: 50;
   height: 450px;
 }
 
@@ -889,6 +886,9 @@ header {
   top: 0%;
 }
 
+.barraNav {
+  z-index: 500;
+}
 .barraNav nav {
   width: 100%;
   overflow: hidden;
@@ -905,6 +905,7 @@ header {
 }
 
 .barraNav nav ul li a {
+  z-index: 500;
   background-color: #071D26;
   text-decoration: none;
   text-align: center;
