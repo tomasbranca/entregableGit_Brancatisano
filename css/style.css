@@ -70,8 +70,6 @@
 }
 .pagIndex .info .un {
   margin-left: 20px;
-  font-size: 25px;
-  font-weight: bold;
 }
 .pagIndex .info .base {
   display: flex;
@@ -152,6 +150,7 @@
 .pagIndex .wcf h1 {
   color: #071D26;
   font-family: FranklinGothic;
+  margin-left: 20px;
 }
 .pagIndex .wcf .wcf2 {
   display: flex;
@@ -189,6 +188,78 @@
 }
 .pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item .card .card-body p {
   font-weight: bolder;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-gsw .card {
+  border: solid 2.5px #034C8C;
+  z-index: 50;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-gsw .card img {
+  border-bottom: solid 2.5px #034C8C;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-gsw .card .card-body {
+  background-color: #034C8C;
+  height: 80px;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-gsw .card .card-body .card-title {
+  color: #F29F05;
+  font-family: Impact;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-gsw .card .card-body .card-text {
+  color: white;
+  font-family: Impact;
+  font-size: 20px;
+  font-weight: lighter;
+  -webkit-text-stroke: 0.5px black;
+  display: flex;
+  justify-content: space-between;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-gsw .card .list-group .list-group-item {
+  background-color: #F29F05;
+  color: #034C8C;
+  font-family: Impact;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-dallas .card {
+  border: solid 2.5px #071D26;
+  z-index: 50;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-dallas .card img {
+  border-bottom: solid 2.5px #071D26;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-dallas .card .card-body {
+  background-color: #071D26;
+  height: 80px;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-dallas .card .card-body .card-title {
+  color: #0367A6;
+  font-family: Impact;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-dallas .card .card-body .card-text {
+  color: #F2F2F2;
+  font-family: Impact;
+  font-size: 20px;
+  font-weight: lighter;
+  -webkit-text-stroke: 0.5px black;
+  display: flex;
+  justify-content: space-between;
+}
+.pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-dallas .card .list-group .list-group-item {
+  background-color: #052A43;
+  color: #CCD5D9;
+  font-family: Impact;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
 }
 
 @media screen and (max-width: 360px) {
@@ -824,7 +895,7 @@
   display: grid;
   grid-template-rows: 150px 4fr;
   grid-template-areas: "tituloNoticias" "cards";
-  height: 200vh;
+  height: 280vh;
 }
 .pagPlantilla .titulo {
   grid-area: tituloNoticias;
@@ -844,7 +915,6 @@
   font-weight: lighter;
 }
 .pagPlantilla .players {
-  z-index: 1;
   grid-area: cards;
   display: flex;
   flex-direction: row;
@@ -853,8 +923,43 @@
   margin-top: 10px;
 }
 .pagPlantilla .players .card {
+  border: solid 2.5px #071D26;
   z-index: 50;
-  height: 450px;
+  height: 447px;
+}
+.pagPlantilla .players .card img {
+  border-bottom: solid 2.5px #071D26;
+}
+.pagPlantilla .players .card .card-body {
+  background-color: #071D26;
+}
+.pagPlantilla .players .card .card-body .card-title {
+  color: #F2F2F2;
+  font-family: Impact;
+  font-style: italic;
+  font-weight: lighter;
+  text-shadow: 2px -1px 2px black;
+  -webkit-text-stroke: 0.5px black;
+}
+.pagPlantilla .players .card .card-body .card-text {
+  color: #F2F2F2;
+  font-family: Impact;
+  font-style: italic;
+  font-size: x-large;
+  font-weight: lighter;
+  text-shadow: 2px -1px 2px black;
+  -webkit-text-stroke: 1px black;
+}
+.pagPlantilla .players .card .list-group .list-group-item {
+  background-color: #052A43;
+  color: #F2F2F2;
+  font-family: Impact;
+  font-weight: lighter;
+  font-size: large;
+  -webkit-text-stroke: 0.5px black;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
 }
 
 body {
@@ -884,11 +989,9 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0%;
-}
-
-.barraNav {
   z-index: 500;
 }
+
 .barraNav nav {
   width: 100%;
   overflow: hidden;
@@ -897,7 +1000,6 @@ header {
   display: flex;
   justify-content: stretch;
   padding: 0 50px;
-  list-style-type: none;
 }
 .barraNav nav ul li {
   justify-self: stretch;
@@ -924,13 +1026,94 @@ header {
   background-color: #052A43;
 }
 
-footer a {
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  height: 200px;
+  background-color: #071D26;
+}
+footer div {
   text-decoration: none;
-  margin-left: 125px;
-  font-family: Impact;
+  display: block;
+  color: #F2F2F2;
+  list-style: none;
+  font-family: FranklinGothic2;
+  font-weight: lighter;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 5px;
+}
+footer div img {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100px;
+}
+footer div h3 {
+  font-size: small;
+  line-height: 5px;
+}
+footer div h3 a {
+  color: #F2F2F2;
+  background-color: #052A43;
+  padding: 2px 2px;
+  color: #F2F2F2;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+footer div h3 a:hover {
+  background-color: black;
+  color: #F2F2F2;
+}
+footer div ul {
+  display: flex;
+  flex-direction: column;
+}
+footer div ul li {
+  font-size: small;
+  line-height: 20px;
+  list-style: none;
+}
+footer div ul li a {
   font-style: italic;
-  font-size: 25px;
-  font-size: x-small;
+  font-weight: lighter;
+  color: #F2F2F2;
+  padding: 2px 2px;
+  color: #F2F2F2;
+  text-decoration: none;
+}
+footer .social {
+  text-align: start;
+  align-items: flex-start;
+}
+footer .social ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .social ul li {
+  font-size: small;
+  line-height: 20px;
+  list-style: none;
+  font-style: italic;
+  font-weight: lighter;
+  color: #F2F2F2;
+  padding: 2px 2px;
+  color: #F2F2F2;
+  text-decoration: none;
+}
+footer .social ul li a {
+  font-style: italic;
+  font-weight: lighter;
+  color: #F2F2F2;
+  padding: 2px 2px;
+  color: #F2F2F2;
+  text-decoration: none;
 }
 
 @font-face {

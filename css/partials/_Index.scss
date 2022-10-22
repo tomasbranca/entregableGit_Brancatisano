@@ -63,8 +63,7 @@
         }
         .un{
             margin-left: 20px;
-            font-size: 25px;
-            font-weight:bold
+
         }
         .base{
             display: flex;
@@ -153,6 +152,7 @@
         h1{
             color: map-get($colores , colorPrimario); 
             font-family: FranklinGothic;
+            margin-left: 20px;
         }
         .wcf2{
 
@@ -194,6 +194,89 @@
                                 p{
                                     font-weight: bolder;
                                 }
+                            }
+                        }
+                    }
+                    .carousel-item-gsw{
+                        .card{
+                            border: solid 2.5px #034C8C;
+                            z-index: 50;
+                            img{
+                                border-bottom: solid 2.5px #034C8C;
+                            }
+                            .card-body{
+                                background-color: #034C8C;
+                                .card-title{
+                                    color: #F29F05;
+                                    font-family: Impact;
+                                    font-style: italic;
+                                    font-size: 15px;
+                                    font-weight: lighter;
+                                }
+                                .card-text{
+                                    color: white;
+                                    font-family: Impact;
+                                    font-size: 20px;
+                                    font-weight: lighter;
+                                    -webkit-text-stroke: 0.5px black;
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                                height: 80px;
+
+                            }
+                            .list-group{
+                                .list-group-item{
+                                    background-color: #F29F05;
+                                    color: #034C8C;
+                                    font-family: Impact;
+                                    font-weight: lighter;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    height: 40px;
+                                }
+                 
+                            }
+                        }
+                    }
+                    .carousel-item-dallas{
+                        .card{
+                            border: solid 2.5px map-get($colores, colorPrimario);
+                            z-index: 50;
+                            img{
+                                border-bottom: solid 2.5px map-get($colores, colorPrimario);
+                            }
+                            .card-body{
+                                background-color: map-get($colores, colorPrimario) ;
+                                .card-title{
+                                    color: #0367A6;
+                                    font-family: Impact;
+                                    font-style: italic;
+                                    font-size: 15px;
+                                    font-weight: lighter;
+                                }
+                                .card-text{
+                                    color: map-get($colores, colorCuaternario);
+                                    font-family: Impact;
+                                    font-size: 20px;
+                                    font-weight: lighter;
+                                    -webkit-text-stroke: 0.5px black;
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                                height: 80px;
+                            }
+                            .list-group{
+                                .list-group-item{
+                                    background-color: map-get($colores, colorTerceario);
+                                    color: #CCD5D9;
+                                    font-family: Impact;
+                                    font-weight: lighter;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    height: 40px;
+                                }
+                 
                             }
                         }
                     }

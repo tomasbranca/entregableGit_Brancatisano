@@ -4,6 +4,7 @@
 @import "./partials/Index";
 @import "./partials/Noticias";
 @import "./partials/Plantilla";
+@import "./partials/Leyendas";
 
 body{
     background-image: url("../images/background.jpg");
@@ -34,10 +35,10 @@ header{
     position: sticky;
     position: -webkit-sticky;
     top: 0%;
+    z-index: 500;
 }
 
 .barraNav{
-    z-index: 500;
     nav{
         width: 100%;
         overflow: hidden;
@@ -45,14 +46,13 @@ header{
             display: flex;
             justify-content: stretch;
             padding: 0 50px;
-            list-style-type: none;
             li{
                 justify-self: stretch;
                 width: 100%
-                }
             }
         }
     }
+}
 .barraNav nav ul li a{
     z-index: 500;
     background-color: map-get($colores , colorPrimario);
@@ -73,15 +73,98 @@ header{
     }
     
 }
-footer a{
-    text-decoration: none;
-    color: map-get($colores , colorCuartenario); 
-    margin-left: 125px;
-    font-family: Impact;
-    font-style: italic;
-    font-size: 25px;
-    font-size:x-small
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 200px;
+    background-color: map-get($colores, colorPrimario);
+    div{
+        text-decoration: none;
+        display: block;
+        color: map-get($colores, colorCuaternario); 
+        list-style: none;
+        font-family: FranklinGothic2;
+        font-weight: lighter;
+        font-size: 15px;
+
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+
+        align-items: center;
+        line-height: 5px;
+        img{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            height: 100px;
+        }
+        h3{
+            font-size: small;
+            line-height: 5px;
+            a{
+                color:#F2F2F2 ;
+                background-color: map-get($colores, colorTerceario);
+                padding: 2px 2px;
+                color: #F2F2F2; 
+                text-decoration: none;
+                transition: background-color 0.5s;
+                &:hover{
+                    background-color: map-get($colores , colorQuinario);
+                    color:map-get($colores, colorCuaternario);
+                } 
+            }
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+                font-size: small;
+                line-height: 20px;
+                list-style: none;
+                a{
+                    font-style: italic;
+                    font-weight: lighter;
+                    color:#F2F2F2 ;
+                    padding: 2px 2px;
+                    color: #F2F2F2; 
+                    text-decoration: none;
+                } 
+            }
+        }
+    }
+    .social{
+        text-align: start;
+        align-items: flex-start;
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+                font-size: small;
+                line-height: 20px;
+                list-style: none;
+                font-style: italic;
+                font-weight: lighter;
+                color:#F2F2F2 ;
+                padding: 2px 2px;
+                color: #F2F2F2; 
+                text-decoration: none;
+                a{
+                    font-style: italic;
+                    font-weight: lighter;
+                    color:#F2F2F2 ;
+                    padding: 2px 2px;
+                    color: #F2F2F2; 
+                    text-decoration: none;
+                } 
+            }
+        }
+    }
 }
+    
 
 
 @font-face {
