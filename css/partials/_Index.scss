@@ -164,7 +164,7 @@
                 img{
                     width: 598.4px;
                     height: 420px;
-                    border: solid 5px map-get($colores , colorSecundario); 
+                    border: solid 5px map-get($colores , colorSecundario);
                 }
                 .games{
                     h5{
@@ -199,13 +199,19 @@
                     }
                     .carousel-item-gsw{
                         .card{
-                            border: solid 2.5px #034C8C;
+                            background-image: url(../../images/gsw_wallpaper.png);
+                            background-repeat: no-repeat;
+                            background-size: 380px;
+                            background-position: -45px 0px;
+                            border: solid 5px #034C8C;
                             z-index: 50;
+                            border-radius: 0px;
                             img{
                                 border-bottom: solid 2.5px #034C8C;
                             }
                             .card-body{
                                 background-color: #034C8C;
+                                border-radius: 0px;
                                 .card-title{
                                     color: #F29F05;
                                     font-family: Impact;
@@ -226,6 +232,7 @@
 
                             }
                             .list-group{
+                                border-radius: 0px;
                                 .list-group-item{
                                     background-color: #F29F05;
                                     color: #034C8C;
@@ -241,13 +248,19 @@
                     }
                     .carousel-item-dallas{
                         .card{
-                            border: solid 2.5px map-get($colores, colorPrimario);
+                            background-image: url(../../images/dallas_wallpaper.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: 0px -250px;
+                            border: solid 5px map-get($colores, colorPrimario);
                             z-index: 50;
+                            border-radius: 0px;
                             img{
                                 border-bottom: solid 2.5px map-get($colores, colorPrimario);
                             }
                             .card-body{
                                 background-color: map-get($colores, colorPrimario) ;
+                                border-radius: 0px;
                                 .card-title{
                                     color: #0367A6;
                                     font-family: Impact;
@@ -267,6 +280,7 @@
                                 height: 80px;
                             }
                             .list-group{
+                                border-radius: 0px;
                                 .list-group-item{
                                     background-color: map-get($colores, colorTerceario);
                                     color: #CCD5D9;
