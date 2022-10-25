@@ -288,7 +288,7 @@
     grid-template-rows: 2fr 3.5fr 2fr 3.5fr 3.5fr;
     grid-template-columns: 1fr;
     grid-template-areas: "titulos" "info" "puestos" "info2" "part";
-    height: 900px;
+    height: 950px;
   }
   .pagIndex .titulos {
     color: #F2F2F2;
@@ -1559,7 +1559,7 @@
   }
   .pag2011 .cuerpo .quinteto .cards .card {
     margin-top: 10px;
-    width: 150px;
+    width: 130px;
     border: solid 2.5px #CCD5D9;
     z-index: 50;
     background-image: url(../images/wallpaper.png);
@@ -1574,11 +1574,11 @@
     position: absolute;
     font-family: Impact;
     font-style: italic;
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 20px;
     margin-top: 10px;
     color: #052A43;
-    text-shadow: 5px -5px #071D26;
+    text-shadow: 2px -2px #071D26;
     -webkit-text-stroke: 0.5px #CCD5D9;
   }
   .pag2011 .cuerpo .quinteto .cards .card img {
