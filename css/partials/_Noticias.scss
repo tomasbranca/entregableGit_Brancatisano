@@ -6,7 +6,7 @@
     "titulo titulo titulo"
     "notPrin notPrin notSec"
     "notTer notTer notTer";
-    height: 160vh;
+    height: 1100px;
     .titulo{
         grid-area: titulo;
         color:#F2F2F2; 
@@ -195,7 +195,7 @@
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) and (max-height:852px){
     .pagNoticias{
         display: grid;
         grid-template-rows: 100px 5fr 3fr 4fr;
@@ -205,7 +205,7 @@
         "notPrin"
         "notSec"
         "notTer";
-        height: 200vh;
+        height: 852px;
         .titulo{
             grid-area: titulo;
             color:#F2F2F2; 

@@ -4,7 +4,7 @@
     grid-template-areas:
     "titulo"
     "cards";
-    height: 200vh;
+    height: 2000px;
     .titulo{
         grid-area: titulo;
         color:#F2F2F2; 
@@ -30,6 +30,7 @@
         flex-wrap: wrap;
         margin-top: 10px;
         .card{
+            width: 20rem;
             border: solid 5px #8C7A42;
             border-radius: 12px;
             z-index: 50;
@@ -94,18 +95,132 @@
             height: 400px;
 
         }
+        .list-group{
+            .list-group-item{
+                background-color: #8C7A42;
+                color: #261501;
+                font-family: Impact;
+                font-weight: lighter;
+                display: flex;
+                justify-content: space-evenly;
+                height: 40px;
+            }
+        }
+    }
+}
+   
+@media screen and (max-width: 360px){
+    .pagLeyenda{
+        display: grid;
+        grid-template-rows: 100px 4fr;
+        grid-template-areas:
+        "titulo"
+        "cards";
+        height: 4500px;
+        .titulo{
+            grid-area: titulo;
+            color:#F2F2F2; 
+            text-align:start;
+            font-family:Impact;
+            font-style: italic;
+            line-height: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: map-get($colores , colorPrimario); 
+            h1{
+                font-size: 35px;
+                margin-left: 10px;
+                font-weight: lighter;
+            }
+        }
+        .players{
+            grid-area: cards;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            .card{
+                width: 15rem;
+                border: solid 5px #8C7A42;
+                border-radius: 12px;
+                z-index: 50;
+                height: fit-content;
+                background-color: #D9CCA7;
+                .number{
+                    display: flex;
+                    justify-content: right;
+                    h2{
+                        position: absolute;
+                        font-family: Impact;
+                        font-style: italic;
+                        font-size: 30px;
+                        margin-right: 20px;
+                        margin-top: 10px;
+                        color: #D9CCA7;
+                        text-shadow: 5px -5px #8C7A42;
+                        -webkit-text-stroke: 0.5px #8C7A42;
+                    }
+                    img{
+                        position: absolute;
+                        height: 50px;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                    }
+                }
+                img{
+                    height: 200px;
+                    border-radius: 7px;
+                }
+                .card-body{
+                    background-color:#D9CCA7;
+                    div{
+                        display: flex;
+                        justify-content: end;
+                        img{
+                            height: 30px;
+                            position: absolute;
+                        }
+                    }
+                    .card-title{
+                        color: #261501;
+                        font-family: Impact;
+                        font-style: italic;
+                        font-size:x-large;
+                        font-weight: lighter;
+                        text-align: center;
+                    }
+                    .card-text{
+                        color: #261501;
+                        font-family: Impact;
+                        font-weight: lighter;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        div{
+                            margin-top: 15px;
+                        }
+                        border-top: solid #8C7A42;                 
+                    }
+                }
+    
+            }
             .list-group{
+                display: none;
+                overflow: hidden;
                 .list-group-item{
+                    display: none;
+                    overflow: hidden;
                     background-color: #8C7A42;
                     color: #261501;
                     font-family: Impact;
                     font-weight: lighter;
                     display: flex;
                     justify-content: space-evenly;
-                    height: 40px;
+                    height: 0px;
                 }
- 
             }
         }
     }
-
+}

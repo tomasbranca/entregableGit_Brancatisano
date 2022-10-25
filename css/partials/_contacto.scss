@@ -1,5 +1,5 @@
 .pagContacto{
-    height: 120vh;
+    height: 800px;
     display: grid;
     grid-template-rows: 150px 4fr;
     grid-template-areas:
@@ -60,6 +60,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                color: map-get($colores , colorPrimario );
                 div{
                     margin-left: 15px;
                 }
@@ -79,6 +80,93 @@
                     textarea{
                         width: 500px;
                         height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    .pagContacto{
+        height: 800px;
+        display: grid;
+        grid-template-rows: 100px 4fr;
+        grid-template-areas:
+        "titulo"
+        "encuesta";
+        .titulo{
+            height: 100px;
+            color:#F2F2F2; 
+            text-align:start;
+            font-family:Impact;
+            font-style: italic;
+            line-height: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: map-get($colores , colorPrimario); 
+            h1{
+                font-size: 30px;
+                margin-left: 10px;
+                font-weight: lighter;
+            }
+            h3{
+                display: none;
+            }
+        }
+        .encuesta{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            .datos{
+                height: 600px;
+                width: 750px;
+                background-color:#F2F2F2;
+                display: flex;
+                flex-direction: column;
+                border: solid 5px #F2F2F2;
+                fieldset{
+                    legend{
+                        height: 100px;
+                        color:map-get($colores , colorPrimario); 
+                        text-align:start;
+                        font-family:Impact;
+                        font-style: italic;
+                        line-height: 0px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        background-color:#F2F2F2;
+                        font-size: 30px;
+                        text-indent: 15px;
+                        font-weight: lighter; 
+                    }
+                    font-family: FranklinGothic2;
+                    font-size: medium;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    div{
+                        margin-left: 5px;
+                    }
+    
+                }
+                form{
+                    background-color:#F2F2F2;
+                    height: 250px;
+                    color: map-get($colores , colorPrimario );
+                    font-family: FranklinGothic2;
+                    font-size: medium;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    div{
+                        margin-left: 5px;
+                        textarea{
+                            width: max-content;
+                            height: 100px;
+                        }
                     }
                 }
             }

@@ -7,7 +7,7 @@
     "info info info puestos"
     "info2 info2 info2 info2"
     "part part part part";
-    height: 245vh;
+    height: 1750px;
     .titulos{
         color: #F2F2F2; 
         text-align: center;
@@ -62,7 +62,9 @@
             color: map-get($colores , colorTerceario);
         }
         .un{
+            margin-top: 20px;
             margin-left: 20px;
+            margin-bottom: 20px;
 
         }
         .base{
@@ -300,7 +302,7 @@
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) and (max-height:852px){
     .pagIndex{
         display: grid;
         grid-template-rows: 2fr 3.5fr 2fr 3.5fr 3.5fr;
@@ -311,7 +313,7 @@
         "puestos"
         "info2"
         "part";
-        height: 200vh;
+        height: 900px;
         .titulos{
             color: #F2F2F2; 
             text-align: center;
@@ -336,15 +338,16 @@
         .info{
             .un{
                 margin-left: 5px;
-                font-size: 15px;
+                font-size: 20px;
                 font-weight:bold
             }
             .base{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 .txt{
-                    margin-left: 3px;
+                    text-align: center;
                     display: flex;
                     flex-direction: column;
                     .title{
@@ -372,31 +375,24 @@
             grid-area: puestos;
             display: flex;
             flex-direction: row;
+            justify-content: space-evenly;
             margin-top: 10px;
-            justify-content: space-around;
-            a iframe{
-                border: solid 5px map-get($colores , colorSecundario); 
-                width: 130px;
-                height: 150px;
-                overflow: hidden;
-                overflow-y: hidden ;
-                overflow-x: hidden;
-                .rank {
-                    a .west{
-                        height: 230px;
-                        overflow: hidden;
-                        overflow-y: hidden ;
-                        overflow-x: hidden ;
+            .rank {
+                width: 125px;
+                span{
+                    font-family: FranklinGothic2;
+                    font-weight:bolder;
+                    color: map-get($colores , colorPrimario); 
+                    font-size: small;
+                }
+                a{
+                    iframe{
+                        width: 125px;
+                        height: 100px;
                     }
                 }
-                    
             }
-            .puestos__txt{
-                font-family: FranklinGothic2;
-                font-weight:bolder;
-                color: map-get($colores , colorPrimario); 
-                font-size: small;
-            }
+            margin-bottom: 10px;    
         }
         .info2{
             grid-area: info2;
@@ -459,7 +455,7 @@
             text-align: center;
             color: map-get($colores , colorPrimario); 
             font-family: FranklinGothic;
-            font-size: 10px;
+            font-size: small;
             transition: color 0.5s;
             &:hover{
                 color: map-get($colores , colorTerceario);
@@ -523,8 +519,14 @@
                     }
                 }
             }
-        }
+        }    
     }
 }
+    
+
+    
 
 
+
+    
+    

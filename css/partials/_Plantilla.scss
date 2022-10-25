@@ -4,7 +4,7 @@
     grid-template-areas:
     "titulo"
     "cards";
-    height: 300vh;
+    height: 2050px;
     .titulo{
         grid-area: titulo;
         color:#F2F2F2; 
@@ -30,6 +30,7 @@
         flex-wrap: wrap;
         margin-top: 10px;
         .card{
+            width: 18rem;
             border: solid 2.5px map-get($colores, colorPrimario);
             z-index: 50;
             height: 447px;
@@ -95,6 +96,114 @@
                     height: 40px;
                 }
  
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    .pagPlantilla{
+        display: grid;
+        grid-template-rows: 100px 4fr;
+        grid-template-areas:
+        "titulo"
+        "cards";
+        height: 5000px;
+        .titulo{
+            grid-area: titulo;
+            color:#F2F2F2; 
+            text-align:start;
+            font-family:Impact;
+            font-style: italic;
+            line-height: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: map-get($colores , colorPrimario); 
+            h1{
+                font-size: 35px;
+                margin-left: 10px;
+                font-weight: lighter;
+            }
+        }
+        .players{
+            grid-area: cards;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            .card{
+                border: solid 2.5px map-get($colores, colorPrimario);
+                z-index: 50;
+                height: fit-content;
+                width: 15rem;
+                background-image: url(../../images/wallpaper.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                .number{
+                    display: flex;
+                    justify-content: right;
+                    h2{
+                        position: absolute;
+                        font-family: Impact;
+                        font-style: italic;
+                        font-size: 30px;
+                        margin-right: 20px;
+                        margin-top: 10px;
+                        color: map-get($colores , colorTerceario);
+                        text-shadow: 5px -5px map-get($colores , colorPrimario);
+                        -webkit-text-stroke: 0.5px map-get($colores , colorSecundario);
+                    }
+                }
+    
+                img{
+                    border-bottom: solid 2.5px map-get($colores, colorPrimario);
+                }
+                .card-body{
+                    background-color:map-get($colores, colorPrimario);
+                    .card-title{
+                        text-align: center;
+                        color: map-get($colores, colorCuaternario);
+                        font-family: Impact;
+                        font-style: italic;
+                        font-size:x-large;
+                        font-weight: lighter;
+                        text-shadow: 2px -1px 2px black;
+                        -webkit-text-stroke: 0.5px black;
+                    }
+                    .card-text{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        div{
+                            margin-top: 15px;
+                        }
+                        color: map-get($colores, colorCuaternario);
+                        font-family: Impact;
+                        font-weight: lighter;
+                        -webkit-text-stroke: 0.2px black;
+                        border-top: solid map-get($colores , colorTerceario );
+    
+                    }
+                }
+                .list-group{
+                    overflow: hidden;
+                    display: none;
+                    border-radius: 0px;
+                    .list-group-item{
+                        overflow: hidden;
+                        display: none;
+                        background-color: map-get($colores, colorTerceario);
+                        color: map-get($colores, colorCuaternario);
+                        font-family: Impact;
+                        font-weight: lighter;
+                        -webkit-text-stroke: 0.2px black;
+                        display: flex;
+                        justify-content: space-between;
+                        height: 40px;
+                    }
+     
+                }
             }
         }
     }

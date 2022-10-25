@@ -48,6 +48,7 @@ header{
             display: flex;
             justify-content: stretch;
             padding: 0 50px;
+            list-style: none;
             li{
                 justify-self: stretch;
                 width: 100%
@@ -184,10 +185,7 @@ footer{
 
 @media screen and (max-width: 360px){
     .logo{
-        img{
-            width: 70px;
-            height: 70px;
-        }
+        display: none;
     }
     
     .pag{
@@ -214,8 +212,105 @@ footer{
         padding: 5px 5px;
         
     }
-    footer a{
-        margin-left: 25px;
-        font-size:x-small
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        height: 100px;
+        background-color: map-get($colores, colorPrimario);
+        div{
+            text-decoration: none;
+            display: block;
+            color: map-get($colores, colorCuaternario); 
+            list-style: none;
+            font-family: FranklinGothic2;
+            font-weight: lighter;
+            font-size: 15px;
+            width: 100px;
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+
+            align-items: center;
+            line-height: 5px;
+            img{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                height: 50px;
+            }
+            h3{
+                font-size: x-small;
+                line-height: 15px;
+                text-align: center;
+                a{
+                    color:#F2F2F2 ;
+                    background-color: map-get($colores, colorTerceario);
+                    padding: 2px 2px;
+                    color: #F2F2F2; 
+                    text-decoration: none;
+                    transition: background-color 0.5s;
+                    &:hover{
+                        background-color: map-get($colores , colorQuinario);
+                        color:map-get($colores, colorCuaternario);
+                    } 
+                }
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    font-size: x-small;
+                    line-height: 5px;
+                    list-style: none;
+                    a{
+                        font-style: italic;
+                        font-weight: lighter;
+                        color:#F2F2F2 ;
+                        padding: 2px 2px;
+                        color: #F2F2F2; 
+                        text-decoration: none;
+                    } 
+                }
+            }
+        }
+        .social{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            align-items: flex-start;
+            h3{
+                display: none;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    font-size: x-small;
+                    line-height: 10px;
+                    list-style: none;
+                    font-style: italic;
+                    font-weight: lighter;
+                    color:#F2F2F2 ;
+                    padding: 2px 2px;
+                    color: #F2F2F2; 
+                    text-decoration: none;
+                    a{
+                        font-style: italic;
+                        font-weight: lighter;
+                        color:#F2F2F2 ;
+                        padding: 2px 2px;
+                        color: #F2F2F2; 
+                        text-decoration: none;
+                    } 
+                }
+            }
+            br{
+                display: none;
+            }
+        }
     }
 }
