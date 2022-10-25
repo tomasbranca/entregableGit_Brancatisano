@@ -55,7 +55,7 @@
                     width: 15rem;
                     border: solid 2.5px map-get($colores, colorSecundario);
                     z-index: 50;
-                    background-image: url(../../images/wallpaper.png);
+                    background-image: url(../images/wallpaper.png);
                     background-repeat: no-repeat;
                     background-size: cover;
                     .number{
@@ -239,7 +239,7 @@
                         width: 150px;
                         border: solid 2.5px map-get($colores, colorSecundario);
                         z-index: 50;
-                        background-image: url(../../images/wallpaper.png);
+                        background-image: url(../images/wallpaper.png);
                         background-repeat: no-repeat;
                         background-size: cover;
                         .number{

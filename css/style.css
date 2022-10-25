@@ -192,7 +192,7 @@
   font-weight: bolder;
 }
 .pagIndex .wcf .wcf2 .stats .carousel-inner .carousel-item-gsw .card {
-  background-image: url(../../images/gsw_wallpaper.png);
+  background-image: url(../images/gsw_wallpaper.png);
   background-repeat: no-repeat;
   background-size: 380px;
   background-position: -45px 0px;
@@ -942,7 +942,7 @@
   border: solid 2.5px #071D26;
   z-index: 50;
   height: 447px;
-  background-image: url(../../images/wallpaper.png);
+  background-image: url(../images/wallpaper.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1043,7 +1043,6 @@
     height: -moz-fit-content;
     height: fit-content;
     width: 15rem;
-    background-image: url(../../images/wallpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1387,7 +1386,7 @@
   width: 15rem;
   border: solid 2.5px #CCD5D9;
   z-index: 50;
-  background-image: url(../../images/wallpaper.png);
+  background-image: url(../images/wallpaper.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1563,7 +1562,7 @@
     width: 150px;
     border: solid 2.5px #CCD5D9;
     z-index: 50;
-    background-image: url(../../images/wallpaper.png);
+    background-image: url(../images/wallpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -34,7 +34,7 @@
             border: solid 2.5px map-get($colores, colorPrimario);
             z-index: 50;
             height: 447px;
-            background-image: url(../../images/wallpaper.png);
+            background-image: url(../images/wallpaper.png);
             background-repeat: no-repeat;
             background-size: cover;
             .number{
@@ -137,7 +137,6 @@
                 z-index: 50;
                 height: fit-content;
                 width: 15rem;
-                background-image: url(../../images/wallpaper.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 .number{
