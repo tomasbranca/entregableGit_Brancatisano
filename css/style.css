@@ -938,10 +938,12 @@
   margin-top: 10px;
 }
 .pagPlantilla .players .card {
-  width: 18rem;
+  width: 16rem;
   border: solid 2.5px #071D26;
   z-index: 50;
-  height: 447px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-image: url(../images/wallpaper.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1112,7 +1114,7 @@
   display: grid;
   grid-template-rows: 150px 4fr;
   grid-template-areas: "titulo" "cards";
-  height: 2000px;
+  height: 1550px;
 }
 .pagLeyenda .titulo {
   grid-area: titulo;
@@ -1140,7 +1142,7 @@
   margin-top: 10px;
 }
 .pagLeyenda .players .card {
-  width: 20rem;
+  width: 18rem;
   border: solid 5px #8C7A42;
   border-radius: 12px;
   z-index: 50;

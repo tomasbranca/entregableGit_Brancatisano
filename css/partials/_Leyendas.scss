@@ -4,7 +4,7 @@
     grid-template-areas:
     "titulo"
     "cards";
-    height: 2000px;
+    height: 1550px;
     .titulo{
         grid-area: titulo;
         color:#F2F2F2; 
@@ -30,7 +30,7 @@
         flex-wrap: wrap;
         margin-top: 10px;
         .card{
-            width: 20rem;
+            width: 18rem;
             border: solid 5px #8C7A42;
             border-radius: 12px;
             z-index: 50;

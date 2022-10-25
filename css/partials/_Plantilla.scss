@@ -30,10 +30,10 @@
         flex-wrap: wrap;
         margin-top: 10px;
         .card{
-            width: 18rem;
+            width: 16rem;
             border: solid 2.5px map-get($colores, colorPrimario);
             z-index: 50;
-            height: 447px;
+            height: max-content;
             background-image: url(../images/wallpaper.png);
             background-repeat: no-repeat;
             background-size: cover;
