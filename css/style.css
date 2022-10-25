@@ -910,7 +910,7 @@
   display: grid;
   grid-template-rows: 150px 4fr;
   grid-template-areas: "titulo" "cards";
-  height: 2050px;
+  height: 2150px;
 }
 .pagPlantilla .titulo {
   grid-area: titulo;
